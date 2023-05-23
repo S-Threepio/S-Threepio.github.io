@@ -1,9 +1,9 @@
 [
   { "url": "/about", "label": "About" },
   { "url": "/resume", "label": "Resume" },
-  { "url": "/resume", "label": "Skills" },
-  { "url": "/resume", "label": "Projects" },
-  { "url": "/resume", "label": "Blogs" },
-  { "url": "/resume", "label": "Certifications" },
-  { "url": "/resume", "label": "Hobbies" }
+  { "url": "/skills", "label": "Skills" },
+  { "url": "/projects", "label": "Projects" },
+  { "url": "/blogs", "label": "Blogs" },
+  { "url": "/certifications", "label": "Certifications" },
+  { "url": "/hobbies", "label": "Hobbies" }
 ]

@@ -1,13 +1,12 @@
 import React from "react";
 import Header from "./Header.js";
 import Footer from "./Footer.js";
-import "./App.css";
 
 const App = () => {
   return (
-    <div className="main">
+    <div className="flex flex-col min-h-screen">
       <Header />
-      <div className="content">{/* The rest of your app's content */}</div>
+      <div className="flex-1 bg-[#F4ECE6]"></div>
       <Footer />
     </div>
   );
