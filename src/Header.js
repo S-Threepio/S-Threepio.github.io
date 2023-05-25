@@ -4,7 +4,7 @@ import logo from "./imgs/education.png";
 const Header = () => {
   return (
     <header className="font-semibold border-b border-gray-100 scale-y-105">
-      <nav className="bg-white md:flex flex-col items-center p-2 lg:flex-row">
+      <nav className="bg-white md:flex flex-col items-center p-2 px-2 lg:flex-row">
         <div className="flex flex-1 items-center">
           <span className="text-xs px-2">&#x25A0;</span>
           <span className="font-bold text-lg">Swanand Kavitkar</span>

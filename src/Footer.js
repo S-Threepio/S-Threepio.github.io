@@ -5,7 +5,7 @@ import github from "./imgs/github.png";
 
 const Footer = () => {
   return (
-    <footer className="px-4 flex flex-col md:flex-row font-semibold items-center">
+    <footer className="bg-[#F4ECE6] px-4 flex flex-col md:flex-row font-semibold items-center">
       <div className="flex-1">© 2023 by Swanand Kavitkar</div>
       <div className="flex flex-col pb-6 md:flex-row px-10 py-2">
         <div className="flex flex-col text-center px-2">
