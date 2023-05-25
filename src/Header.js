@@ -8,8 +8,12 @@ const Header = () => {
         <div className="flex items-center flex-1">
           <span className="px-2 text-xs">&#x25A0;</span>
           <span className="text-lg font-bold">Swanand Kavitkar</span>
-          <img className="h-8 ml-2" src={logo} alt="Logo" />
-          <div className="ml-2 text-base">MSCS@ASU</div>
+          <img className="h-8 ml-2 mr-1" src={logo} alt="Logo" />
+          <div className="flex flex-row items-center gap-1 ml-2 text-base">
+            <span>MSCS</span>
+            <span>@</span>
+            <span>Arizona State University</span>
+          </div>
         </div>
         <div>
           <ul className="flex text-base">
