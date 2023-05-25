@@ -7,7 +7,7 @@ import leetcode from "./imgs/leetcode.png";
 
 const Intro = () => {
   return (
-    <div className="justify-center border border-gray-300 shadow-lg h-max">
+    <div className="justify-center border border-gray-300 shadow-lg h-max min-w-max">
       <div className="items-center flex flex-col py-4 px-10 bg-[#F4ECE6]">
         <img
           className="w-56 h-56 object-cover rounded-full overflow-hidden"
@@ -18,7 +18,7 @@ const Intro = () => {
           <span>Swanand</span>
           <span>Kavitkar</span>
           <div className=" w-16 border-b-2 border-[#0050FF] pt-5" />
-          <div className="text-lg font-semibold pt-5 items-center flex flex-col">
+          <div className="text-lg font-semibold pt-5 items-center flex flex-col w-max">
             <span>MSCS @ ASU</span>
             <span>Graduating May 2024</span>
           </div>
