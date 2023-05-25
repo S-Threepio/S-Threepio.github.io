@@ -3,13 +3,13 @@ import logo from "./imgs/education.png";
 
 const Header = () => {
   return (
-    <header className="font-semibold border-b border-gray-100 scale-y-105">
-      <nav className="bg-white md:flex flex-col items-center p-2 px-2 lg:flex-row">
-        <div className="flex flex-1 items-center">
-          <span className="text-xs px-2">&#x25A0;</span>
-          <span className="font-bold text-lg">Swanand Kavitkar</span>
+    <header className="font-semibold scale-y-105 border-b border-gray-100">
+      <nav className="flex-col items-center p-2 px-2 bg-white md:flex lg:flex-row">
+        <div className="flex items-center flex-1">
+          <span className="px-2 text-xs">&#x25A0;</span>
+          <span className="text-lg font-bold">Swanand Kavitkar</span>
           <img className="h-8 ml-2" src={logo} alt="Logo" />
-          <div className="text-base ml-2">MSCS@ASU</div>
+          <div className="ml-2 text-base">MSCS@ASU</div>
         </div>
         <div>
           <ul className="flex text-base">

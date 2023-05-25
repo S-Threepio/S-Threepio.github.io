@@ -10,26 +10,26 @@ const Intro = () => {
     <div className="justify-center border border-gray-300 shadow-lg h-max min-w-max">
       <div className="items-center flex flex-col py-4 px-10 bg-[#F4ECE6]">
         <img
-          className="w-56 h-56 object-cover rounded-full overflow-hidden"
+          className="object-cover w-56 h-56 overflow-hidden rounded-full"
           src={pfp}
           alt="pfp"
         />
-        <div className="items-center text-2xl pt-6 font-sans font-bold flex flex-col">
+        <div className="flex flex-col items-center pt-6 font-sans text-2xl font-bold">
           <span>Swanand</span>
           <span>Kavitkar</span>
           <div className=" w-16 border-b-2 border-[#0050FF] pt-5" />
-          <div className="text-lg font-semibold pt-5 items-center flex flex-col w-max">
+          <div className="flex flex-col items-center pt-5 text-lg font-semibold w-max">
             <span>MSCS @ ASU</span>
             <span>Graduating May 2024</span>
           </div>
         </div>
       </div>
-      <div className="flex gap-2 justify-evenly py-4 bg-white w-full ">
+      <div className="flex w-full gap-2 py-4 bg-white justify-evenly ">
         <a href="https://www.linkedin.com/in/s-threepio/">
           <img className="w-8 hover:scale-125" src={linkedin} alt="Icon" />
         </a>
         <a href="https://leetcode.com/Masked_Yurnero/">
-          <img className="w-8  hover:scale-125" src={leetcode} alt="Icon" />
+          <img className="w-8 hover:scale-125" src={leetcode} alt="Icon" />
         </a>
         <a href="https://github.com/S-Threepio">
           <img className="w-8 hover:scale-125" src={github} alt="Icon" />

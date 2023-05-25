@@ -2,11 +2,11 @@ import React from "react";
 
 const Bio = () => {
   return (
-    <div className="justify-center h-max w-2/5">
+    <div className="justify-center w-2/5 h-max">
       <div className="flex flex-col p-4 px-12">
-        <div className="text-7xl py-4 font-bold ">Hello</div>
+        <div className="py-4 font-bold text-7xl ">Hello</div>
         <div className="text-2xl">I am Swanand and I code.</div>
-        <div className="my-6 flex flex-row gap-2 font-semibold">
+        <div className="flex flex-row gap-2 my-6 font-semibold">
           <button className="px-12  py-0.5 text-md bg-white transition duration-100 ease-out hover:scale-105 hover:bg-[#F4ECE6] text-gray-800 border border-gray-400 rounded-full shadow">
             Resume
           </button>
@@ -14,7 +14,7 @@ const Bio = () => {
             Projects
           </button>
         </div>
-        <div className="text-base font-thin py-2 ">
+        <div className="py-2 text-base font-thin ">
           <p>
             I am an MSCS Student at the esteemed Arizona State University. I
             have a work experience of 2 years in Mobile Development at HSBC and
