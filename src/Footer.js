@@ -5,9 +5,9 @@ import github from "./imgs/github.png";
 
 const Footer = () => {
   return (
-    <footer className="bg-white px-4 flex font-semibold items-center">
+    <footer className="bg-[#F4ECE6] px-4 flex flex-col md:flex-row font-semibold items-center">
       <div className="flex-1">© 2023 by Swanand Kavitkar</div>
-      <div className="flex flex-row px-10 py-2">
+      <div className="flex flex-col pb-6 md:flex-row px-10 py-2">
         <div className="flex flex-col text-center px-2">
           Call
           <a className="underline  pt-1" href="tel:+{16232838579}">
@@ -20,9 +20,9 @@ const Footer = () => {
             skavitka@asu.edu
           </a>
         </div>
-        <div className="flex flex-col text-center px-4">
+        <div className="flex justify-center flex-col text-center px-4">
           Social
-          <div className="flex gap-2">
+          <div className="flex gap-2 justify-center">
             <a href="https://www.linkedin.com/in/s-threepio/">
               <img
                 className="w-6 pt-1 hover:scale-125"
