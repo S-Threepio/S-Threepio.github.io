@@ -2,7 +2,7 @@ import React from "react";
 
 const Bio = () => {
   return (
-    <div className="flex flex-col w-3/5 p-4 px-12">
+    <div className="flex flex-col md:w-[450px] lg:w-[500px] p-4 px-12">
       <div className="py-4 font-bold text-7xl ">Hello</div>
       <div className="text-2xl">I am Swanand and I code.</div>
       <div className="flex flex-row gap-2 my-6 font-semibold">

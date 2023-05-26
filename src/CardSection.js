@@ -5,7 +5,7 @@ import medium from "./imgs/medium.png";
 import github from "./imgs/github.png";
 import leetcode from "./imgs/leetcode.png";
 
-const Intro = () => {
+const CardSection = () => {
   return (
     <div className="justify-center border border-gray-300 shadow-lg h-max min-w-max">
       <div className="items-center flex flex-col py-4 px-10 bg-[#F4ECE6]">
@@ -42,4 +42,4 @@ const Intro = () => {
   );
 };
 
-export default Intro;
+export default CardSection;
