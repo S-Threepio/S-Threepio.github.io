@@ -10,7 +10,7 @@ const Intro = () => {
     <div className="justify-center border border-gray-300 shadow-lg h-max min-w-max">
       <div className="items-center flex flex-col py-4 px-10 bg-[#F4ECE6]">
         <img
-          className="object-cover w-56 h-56 overflow-hidden rounded-full"
+          className="object-cover w-56 h-56 rounded-full lg:overflow-hidden"
           src={pfp}
           alt="pfp"
         />
