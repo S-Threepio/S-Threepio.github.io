@@ -1,5 +1,5 @@
 [
-  { "url": "/about", "label": "About" },
+  { "url": "/", "label": "About" },
   { "url": "/resume", "label": "Resume" },
   { "url": "/skills", "label": "Skills" },
   { "url": "/projects", "label": "Projects" },

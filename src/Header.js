@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import navLinks from "./data/urls.json";
 import logo from "./imgs/education.png";
 import menu from "./imgs/menu.png";
@@ -10,10 +11,12 @@ const Header = () => {
     console.log(isMenuOpen);
   };
 
+  const [activeIndex, setActiveIndex] = useState(0);
+
   return (
     <header className="font-semibold scale-y-105 border-b border-gray-300 md:border-gray-100">
       <nav className="flex flex-row items-center p-4 px-2 bg-white md:flex-col md:items-center xl:flex-row">
-        <div className="flex items-center flex-1">
+        <div className="flex items-center justify-center flex-1 md:justify-normal">
           <span className="hidden px-2 text-xs md:flex">&#x25A0;</span>
           <span className="text-lg font-bold">Swanand Kavitkar</span>
           <img className="hidden h-8 ml-2 mr-1 md:flex" src={logo} alt="Logo" />
@@ -34,17 +37,19 @@ const Header = () => {
         </div>
         <div>
           <ul
-            className={`flex-col md:flex md:flex-row md:text-base ${
+            className={`flex-col fixed top-0 left-0 w-screen h-screen z-50 items-stretch  bg-white text-center  sm:static sm:h-auto sm:w-auto md:flex md:flex-row md:text-base ${
               isMenuOpen ? `flex` : `hidden`
             }`}
           >
             {navLinks.map((link, index) => (
-              <li
+              <Link
+                to={link.url}
                 key={index}
-                className="px-4 py-2 transition duration-100 ease-out hover:bg-[#F4ECE6] hover:scale-105 cursor-pointer "
+                className="px-4 py-4 sm:py-2 transition duration-100 ease-out hover:bg-[#F4ECE6] hover:scale-105 cursor-pointer"
+                onClick={() => setActiveIndex(index)}
               >
-                <a href={link.url}>{link.label}</a>
-              </li>
+                {link.label}
+              </Link>
             ))}
           </ul>
         </div>
