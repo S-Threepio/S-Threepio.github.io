@@ -11,8 +11,8 @@ const Header = () => {
   };
 
   return (
-    <header className="font-semibold scale-y-105 border-b border-gray-100">
-      <nav className="flex flex-row items-center p-2 px-2 bg-white md:flex-col md:items-center xl:flex-row">
+    <header className="font-semibold scale-y-105 border-b border-gray-300 md:border-gray-100">
+      <nav className="flex flex-row items-center p-4 px-2 bg-white md:flex-col md:items-center xl:flex-row">
         <div className="flex items-center flex-1">
           <span className="hidden px-2 text-xs md:flex">&#x25A0;</span>
           <span className="text-lg font-bold">Swanand Kavitkar</span>

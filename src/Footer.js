@@ -5,7 +5,7 @@ import github from "./imgs/github.png";
 
 const Footer = () => {
   return (
-    <footer className="bg-[#F4ECE6] px-4 flex flex-col py-2 md:py-0 md:flex-row font-semibold items-center">
+    <footer className="bg-[#F4ECE6] px-4 flex flex-col-reverse py-2 md:py-0 md:flex-row font-semibold items-center">
       <div className="flex-1 py-2 md:py-0">© 2023 by Swanand Kavitkar</div>
       <div className="flex flex-col px-10 m-2 md:p-2 md:flex-row">
         <div className="flex flex-col px-2 py-2 text-center md:py-0">
@@ -20,7 +20,7 @@ const Footer = () => {
             skavitka@asu.edu
           </a>
         </div>
-        <div className="flex flex-col justify-center px-4 py-2 text-center md:py-0">
+        <div className="flex-col justify-center hidden px-4 py-2 text-center md:flex md:py-0">
           Social
           <div className="flex justify-center gap-2 py-1 md:py-0">
             <a href="https://www.linkedin.com/in/s-threepio/">
