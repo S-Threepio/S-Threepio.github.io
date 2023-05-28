@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import navLinks from "./data/urls.json";
 import logo from "./imgs/education.png";
 import menu from "./imgs/menu.png";
@@ -12,6 +12,7 @@ const Header = () => {
   };
 
   const [activeIndex, setActiveIndex] = useState(0);
+  const location = useLocation();
 
   const setCustomActiveIndex = (index) => {
     setActiveIndex(index);
@@ -42,16 +43,15 @@ const Header = () => {
         </div>
         <div>
           <ul
-            className={`flex-col fixed top-0 left-0 w-screen h-screen z-50 items-stretch  bg-white text-center  sm:static sm:h-auto sm:w-auto md:flex md:flex-row md:text-base ${
-              isMenuOpen ? `flex` : `hidden`
-            }`}
+            className={`transition-transform duration-300 transform md:transform-none flex-col fixed top-0 left-0 w-screen h-screen z-50 items-stretch  bg-white text-center  md:static md:h-auto md:w-auto md:flex md:flex-row md:text-base
+            ${isMenuOpen ? "flex translate-x-0" : "translate-x-full"}`}
           >
             {navLinks.map((link, index) => (
               <Link
                 to={link.url}
                 key={index}
                 className={`px-4 py-4 sm:py-2 transition duration-100 ease-out hover:bg-[#F4ECE6] md:hover:scale-105 cursor-pointer 
-                ${activeIndex == index ? "bg-[#F4ECE6]" : ""}`}
+                ${window.location.pathname == link.url ? "bg-[#F4ECE6]" : ""}`}
                 onClick={() => setCustomActiveIndex(index)}
               >
                 {link.label}
