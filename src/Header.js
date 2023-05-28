@@ -13,6 +13,11 @@ const Header = () => {
 
   const [activeIndex, setActiveIndex] = useState(0);
 
+  const setCustomActiveIndex = (index) => {
+    setActiveIndex(index);
+    handleMenuToggle();
+  };
+
   return (
     <header className="font-semibold scale-y-105 border-b border-gray-300 md:border-gray-100">
       <nav className="flex flex-row items-center p-4 px-2 bg-white md:flex-col md:items-center xl:flex-row">
@@ -45,8 +50,9 @@ const Header = () => {
               <Link
                 to={link.url}
                 key={index}
-                className="px-4 py-4 sm:py-2 transition duration-100 ease-out hover:bg-[#F4ECE6] hover:scale-105 cursor-pointer"
-                onClick={() => setActiveIndex(index)}
+                className={`px-4 py-4 sm:py-2 transition duration-100 ease-out hover:bg-[#F4ECE6] md:hover:scale-105 cursor-pointer 
+                ${activeIndex == index ? "bg-[#F4ECE6]" : ""}`}
+                onClick={() => setCustomActiveIndex(index)}
               >
                 {link.label}
               </Link>
