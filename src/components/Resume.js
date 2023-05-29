@@ -45,9 +45,9 @@ const Resume = () => {
   return (
     <div className="overflow-scroll">
       <div className="bg-[#F4ECE6] w-full flex p-6 justify-center">
-        <div className="flex flex-col gap-10 items-center lg:items-start px-8 py-4 mb-2 w-[900px] sm:m-4">
-          <div className="text-6xl font-bold w-max">Resume</div>
-          <div className="text-lg text-left md:w-[600px]">
+        <div className="flex flex-col gap-10 items-center lg:items-start px-8 py-4 mb-2 w-[900px] sm:m-2">
+          <div className="text-5xl font-bold w-max">Summary</div>
+          <div className="text-lg text-justify">
             Throughout my career, I have contributed to positive business
             results through effective organization, prioritization and
             follow-through of key organizational projects.
@@ -68,17 +68,17 @@ const Resume = () => {
         </div>
       </div>
 
-      <div className="bg-[#ECEBEB] w-full justify-center text-center lg:text-left flex p-6 my-2 sm:my-4">
+      <div className="bg-[#ECEBEB] w-full justify-center text-center lg:text-justify flex p-6 my-2 sm:my-2">
         <div className="flex flex-col gap-10 px-8 py-4 items-center lg:items-start mb-2 w-[900px] ">
           <div className="text-5xl font-bold text-left w-max">Education</div>
-          <div className="flex flex-col items-center justify-center gap-10">
+          <div className="flex flex-col items-center gap-10 text-justify justify-left">
             <Education data={ed1} />
             <Education data={ed2} />
           </div>
         </div>
       </div>
 
-      <div className="bg-[#ECEBEB] w-full justify-center flex p-6 my-2 sm:my-4">
+      <div className="bg-[#ECEBEB] w-full justify-center flex p-6 my-2 sm:my-2">
         <div className="flex flex-col gap-10 px-8 py-4 items-center lg:items-start mb-2 w-[900px] ">
           <div className="text-5xl font-bold text-left w-max">Work</div>
           <div className="flex flex-col items-center justify-center gap-10">
@@ -87,8 +87,6 @@ const Resume = () => {
           </div>
         </div>
       </div>
-
-      <div></div>
     </div>
   );
 };
