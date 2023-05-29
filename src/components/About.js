@@ -1,6 +1,6 @@
 import React from "react";
-import CardSection from "./CardSection";
-import Bio from "./Bio";
+import CardSection from "./Landing/CardSection";
+import Bio from "./Landing/Bio";
 const About = () => {
   return (
     <div className="flex-col flex-1 w-screen overflow-scroll md:flex-row md:flex">

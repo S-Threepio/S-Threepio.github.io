@@ -44,7 +44,7 @@ const Header = () => {
         <div>
           <ul
             className={`transition-transform duration-300 transform md:transform-none flex-col fixed top-0 left-0 w-screen h-screen z-50 items-stretch  bg-white text-center  md:static md:h-auto md:w-auto md:flex md:flex-row md:text-base
-            ${isMenuOpen ? "flex translate-x-0" : "translate-x-full"}`}
+            ${isMenuOpen ? "flex translate-x-0" : "translate-x-full hidden"}`}
           >
             {navLinks.map((link, index) => (
               <Link

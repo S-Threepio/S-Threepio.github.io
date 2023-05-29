@@ -1,11 +1,11 @@
 import React from "react";
-import pfp from "./imgs/unnamed.jpg";
-import linkedin from "./imgs/linkedin-blue.png";
-import medium from "./imgs/medium.png";
-import github from "./imgs/github.png";
-import leetcode from "./imgs/leetcode.png";
+import pfp from "../../imgs/unnamed.jpg";
+import linkedin from "../../imgs/linkedin-blue.png";
+import medium from "../../imgs/medium.png";
+import github from "../../imgs/github.png";
+import leetcode from "../../imgs/leetcode.png";
 import Desc from "./Desc";
-import BasicButtons from "./BasicButtons";
+import BasicButtons from "../BasicButtons";
 
 const CardSection = () => {
   return (
