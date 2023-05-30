@@ -42,16 +42,24 @@ const Header = () => {
             alt="Logo"
           />
         </div>
+
+        {isMenuOpen && (
+          <div
+            className="absolute inset-0 w-screen h-screen backdrop-filter backdrop-blur-sm md:hidden"
+            onClick={() => handleMenuToggle()}
+          />
+        )}
+
         <div>
           <ul
-            className={`w-1/2 h-[75vh] flex transition-transform duration-300 transform md:transform-none md:transition-none flex-col absolute top-0 right-0  bg-white text-center border border-gray-200  md:border-none md:static md:h-auto md:w-auto md:flex md:flex-row md:text-base
+            className={`pt-5 md:pt-0 w-1/2 h-screen flex transition-transform duration-300 transform md:transform-none md:transition-none flex-col absolute top-0 right-0  bg-white text-center border border-gray-200  md:border-none md:static md:h-auto md:w-auto md:flex md:flex-row md:text-base
             ${isMenuOpen ? "translate-x-0" : "translate-x-full"}`}
           >
             {navLinks.map((link, index) => (
               <Link
                 to={link.url}
                 key={index}
-                className={`px-4 py-4 sm:py-2 transition duration-100 ease-out hover:bg-[#F4ECE6] md:hover:scale-105 cursor-pointer 
+                className={`md:text-center px-4 py-4 sm:py-2 transition duration-100 ease-out hover:bg-[#F4ECE6] md:hover:scale-105 cursor-pointer 
                 ${
                   window.location.pathname == link.url
                     ? "bg-[#F4ECE6]"
