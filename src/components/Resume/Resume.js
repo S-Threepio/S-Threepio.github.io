@@ -61,7 +61,7 @@ const Resume = () => {
           </div>
           <div
             href="/resume"
-            className="w-max px-12 py-1  bg-[#0050FF] text-white font-thin transition duration-100 ease-out hover:scale-105 hover:bg-[#F4ECE6] hover:cursor-pointer hover:text-gray-950 border border-gray-400 rounded-full shadow"
+            className="w-max px-12 py-1  bg-[#0050FF] text-white font-semibold transition duration-100 ease-out hover:scale-105 hover:bg-[#F4ECE6] hover:cursor-pointer hover:text-gray-950 border border-gray-400 rounded-full shadow"
           >
             Download Resume
           </div>
