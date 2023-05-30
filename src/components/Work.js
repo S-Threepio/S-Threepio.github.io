@@ -1,11 +1,7 @@
 import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
 
-const Education = (props) => {
-  useEffect(() => {
-    console.log(props.data.detail);
-  });
-
+const Work = (props) => {
   const { data } = props;
   return (
     <div className="flex flex-col items-center justify-center lg:flex-row lg:gap-4">
@@ -25,4 +21,4 @@ const Education = (props) => {
   );
 };
 
-export default Education;
+export default Work;

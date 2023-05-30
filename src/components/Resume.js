@@ -5,7 +5,7 @@ import Work from "./Work";
 const Resume = () => {
   const ed1 = {
     year: "2022-2024",
-    university: "Arizona State university",
+    university: "Arizona State University",
     gpa: "4.0",
     info: " I am currently enrolled at the Master of Science program in Computer Science at the Arizona State University. My coursework includes Cloud Computing, Distributed Database Systems, Machine Learning Fairness and Security.",
   };

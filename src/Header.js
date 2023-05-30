@@ -7,12 +7,13 @@ const Header = () => {
   const [isMenuOpen, setMenuOpen] = useState(false);
 
   const handleMenuToggle = () => {
-    setMenuOpen(!isMenuOpen);
-    console.log(isMenuOpen);
+    if (window.innerWidth < 768) {
+      setMenuOpen(!isMenuOpen);
+      console.log(isMenuOpen);
+    }
   };
 
   const [activeIndex, setActiveIndex] = useState(0);
-  const location = useLocation();
 
   const setCustomActiveIndex = (index) => {
     setActiveIndex(index);
