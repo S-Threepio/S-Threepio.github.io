@@ -22,7 +22,7 @@ const Header = () => {
 
   return (
     <header className="font-semibold scale-y-105 border-b border-gray-300 md:border-gray-100">
-      <nav className="flex flex-row items-center p-4 px-2 bg-white md:flex-col md:items-center xl:flex-row">
+      <nav className="flex flex-row items-center p-4 px-2 bg-white h-max md:flex-col md:items-center xl:flex-row">
         <div className="flex items-center justify-center flex-1 md:justify-normal">
           <span className="hidden px-2 text-xs md:flex">&#x25A0;</span>
           <span className="text-lg font-bold">Swanand Kavitkar</span>
@@ -44,8 +44,8 @@ const Header = () => {
         </div>
         <div>
           <ul
-            className={`transition-transform duration-300 transform md:transform-none flex-col fixed top-0 left-0 w-screen h-screen z-50 items-stretch  bg-white text-center  md:static md:h-auto md:w-auto md:flex md:flex-row md:text-base
-            ${isMenuOpen ? "flex translate-x-0" : "translate-x-full"}`}
+            className={`w-1/2 h-[75vh] flex transition-transform duration-300 transform md:transform-none md:transition-none flex-col absolute top-0 right-0  bg-white text-center border border-gray-200  md:border-none md:static md:h-auto md:w-auto md:flex md:flex-row md:text-base
+            ${isMenuOpen ? "translate-x-0" : "translate-x-full"}`}
           >
             {navLinks.map((link, index) => (
               <Link
