@@ -44,30 +44,32 @@ const Skills = (props) => {
   ];
 
   return (
-    <div className="flex flex-col items-center overflow-scroll">
-      <div className="flex flex-col p-10 bg-[#ECEBEB] w-screen items-center">
-        <div className="text-4xl font-bold text-left">Technical Skills</div>
-        <div className="flex flex-col items-start w-screen md:w-[650px]">
-          <ul className="flex flex-col items-start pad:w-[600px] lg:w-[700px] xl:w-[850px] gap-3 md:gap-2 m-10 text-xl">
-            {skills.map((skill, index) => (
-              <li className="list-disc" key={index}>
-                <b className="font-bold">{skill.type} :</b>{" "}
-                <span className="sm:hidden">
-                  <br />
-                </span>
-                <span> {skill.info}</span>
-              </li>
-            ))}
-          </ul>
+    <div className="flex flex-col items-center w-screen overflow-scroll">
+      <div className="flex flex-col items-center w-max">
+        <div className="flex flex-col items-start w-full p-10">
+          <div className="text-5xl font-bold text-left">Technical Skills</div>
+          <div className="flex flex-col items-start">
+            <ul className="flex flex-col items-start gap-3 m-10 text-xl md:gap-2">
+              {skills.map((skill, index) => (
+                <li className="list-disc" key={index}>
+                  <b className="font-bold">{skill.type} :</b>{" "}
+                  <span className="sm:hidden">
+                    <br />
+                  </span>
+                  <span> {skill.info}</span>
+                </li>
+              ))}
+            </ul>
+          </div>
         </div>
-      </div>
 
-      <div className="flex flex-col items-center p-10">
-        <div className="text-4xl font-bold text-left">Soft Skills</div>
-        <div className="grid grid-cols-1 mt-4 md:grid-cols-2 xl:grid-cols-3">
-          {data.map((data, index) => (
-            <Softskills key={index} data={data} />
-          ))}
+        <div className="flex flex-col items-start p-10 flex-[2]">
+          <div className="text-5xl font-bold text-left">Soft Skills</div>
+          <div className="grid grid-cols-1 p-5 mx-2 mt-4 md:grid-cols-2 xl:grid-cols-3">
+            {data.map((data, index) => (
+              <Softskills key={index} data={data} />
+            ))}
+          </div>
         </div>
       </div>
     </div>

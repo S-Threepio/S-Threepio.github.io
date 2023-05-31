@@ -3,10 +3,10 @@ const Softskills = (props) => {
   const { data } = props;
 
   return (
-    <div className="flex flex-col items-center m-2 text-center border border-gray-[150] w-[500px] md:w-[350px] lg:w-[400px] shadow-lg scale-90">
+    <div className="flex flex-col items-center m-2 text-center border border-gray-[150]  md:w-[350px] lg:w-[400px] shadow-lg scale-90">
       <img src={data.img} alt="logo" className="object-cover w-40 h-40 p-4" />
       <div className="text-2xl font-semibold text-center ">{data.type}</div>
-      <div className="p-4 text-lg">{data.info}</div>
+      <div className="p-6 text-lg font-medium text-justify">{data.info}</div>
     </div>
   );
 };
