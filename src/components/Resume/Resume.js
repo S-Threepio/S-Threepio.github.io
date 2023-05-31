@@ -43,7 +43,7 @@ const Resume = () => {
   };
 
   return (
-    <div className="overflow-scroll">
+    <div className="flex flex-col flex-1 overflow-scroll">
       <div className="bg-[#F4ECE6] w-full flex p-6 justify-center">
         <div className="flex flex-col gap-10 items-center lg:items-start px-8 py-4 mb-2 w-[900px] sm:m-2">
           <div className="text-5xl font-bold w-max">Summary</div>
