@@ -47,7 +47,7 @@ const Skills = (props) => {
     <div className="flex flex-col items-center w-screen overflow-scroll">
       <div className="flex flex-col items-center w-max">
         <div className="flex flex-col items-center w-screen p-10 bg-[#E8E6E6]">
-          <div className="flex flex-col items-start w-[70%]">
+          <div className="flex flex-col items-start lg:w-[1000px] xl:w-[1200px]">
             <div className="text-5xl font-bold text-left">Technical Skills</div>
             <div className="flex flex-col items-start">
               <ul className="flex flex-col items-start gap-3 m-10 text-xl md:gap-2">
@@ -64,8 +64,8 @@ const Skills = (props) => {
             </div>
           </div>
         </div>
-        <div className="flex flex-col items-center w-screen">
-          <div className="flex flex-col items-start w-[70%] p-10">
+        <div className="flex flex-col items-center w-screen p-10">
+          <div className="flex flex-col items-start lg:w-[1000px] xl:w-[1200px]">
             <div className="text-5xl font-bold text-left">Soft Skills</div>
             <div className="grid grid-cols-1 p-5 mx-2 mt-4 md:grid-cols-2 xl:grid-cols-3">
               {data.map((data, index) => (
