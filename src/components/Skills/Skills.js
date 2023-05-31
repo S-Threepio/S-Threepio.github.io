@@ -46,29 +46,32 @@ const Skills = (props) => {
   return (
     <div className="flex flex-col items-center w-screen overflow-scroll">
       <div className="flex flex-col items-center w-max">
-        <div className="flex flex-col items-start w-full p-10">
-          <div className="text-5xl font-bold text-left">Technical Skills</div>
-          <div className="flex flex-col items-start">
-            <ul className="flex flex-col items-start gap-3 m-10 text-xl md:gap-2">
-              {skills.map((skill, index) => (
-                <li className="list-disc" key={index}>
-                  <b className="font-bold">{skill.type} :</b>{" "}
-                  <span className="sm:hidden">
-                    <br />
-                  </span>
-                  <span> {skill.info}</span>
-                </li>
-              ))}
-            </ul>
+        <div className="flex flex-col items-center w-screen p-10 bg-[#E8E6E6]">
+          <div className="flex flex-col items-start w-[70%]">
+            <div className="text-5xl font-bold text-left">Technical Skills</div>
+            <div className="flex flex-col items-start">
+              <ul className="flex flex-col items-start gap-3 m-10 text-xl md:gap-2">
+                {skills.map((skill, index) => (
+                  <li className="list-disc" key={index}>
+                    <b className="font-bold">{skill.type} :</b>{" "}
+                    <span className="sm:hidden">
+                      <br />
+                    </span>
+                    <span> {skill.info}</span>
+                  </li>
+                ))}
+              </ul>
+            </div>
           </div>
         </div>
-
-        <div className="flex flex-col items-start p-10 flex-[2]">
-          <div className="text-5xl font-bold text-left">Soft Skills</div>
-          <div className="grid grid-cols-1 p-5 mx-2 mt-4 md:grid-cols-2 xl:grid-cols-3">
-            {data.map((data, index) => (
-              <Softskills key={index} data={data} />
-            ))}
+        <div className="flex flex-col items-center w-screen">
+          <div className="flex flex-col items-start w-[70%] p-10">
+            <div className="text-5xl font-bold text-left">Soft Skills</div>
+            <div className="grid grid-cols-1 p-5 mx-2 mt-4 md:grid-cols-2 xl:grid-cols-3">
+              {data.map((data, index) => (
+                <Softskills key={index} data={data} />
+              ))}
+            </div>
           </div>
         </div>
       </div>
