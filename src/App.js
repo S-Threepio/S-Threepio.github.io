@@ -4,7 +4,7 @@ import Footer from "./Footer.js";
 import About from "./components/Landing/About.js";
 import Resume from "./components/Resume/Resume.js";
 import Skills from "./components/Skills/Skills.js";
-import Projects from "./components/Projects.js";
+import Projects from "./components/Projects/Projects.js";
 import Blogs from "./components/Blogs.js";
 import Certifications from "./components/Certifications.js";
 import Hobbies from "./components/Hobbies.js";
@@ -50,6 +50,7 @@ const App = () => {
           <Route path="/" element={<About />} />
           <Route path="/resume" element={<Resume />} />
           <Route path="/skills" element={<Skills skills={skills} />} />
+          <Route path="/projects" element={<Projects />} />
         </Routes>
       </Router>
       <Footer />

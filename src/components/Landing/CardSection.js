@@ -1,5 +1,5 @@
 import React from "react";
-import pfp from "../../imgs/unnamed.jpg";
+import pfp from "../../imgs/pfp.jpg";
 import linkedin from "../../imgs/linkedin-blue.png";
 import medium from "../../imgs/medium.png";
 import github from "../../imgs/github.png";
