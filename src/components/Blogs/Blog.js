@@ -16,7 +16,7 @@ const Blog = (props) => {
           className="object-contain w-[250px] h-[300px] mx-10"
         />
         <div className="flex flex-col gap-10 items-center">
-          <div className="text-3xl font-semibold w-4/5 text-justify">
+          <div className="text-xl lg:text-3xl font-semibold w-4/5 text-justify">
             {blog.title} <a href={blog.link}>{blog.label}</a>
           </div>
           <div className="w-4/5 font-semibold text-justify">{blog.info}</div>
