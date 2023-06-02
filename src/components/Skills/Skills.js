@@ -1,11 +1,11 @@
 import React from "react";
 import Softskills from "./Softskills";
-import teamWork from "../../imgs/teamWork.png";
-import adaptability from "../../imgs/adaptability.jpeg";
-import communication from "../../imgs/Communication.webp";
-import problemsolving from "../../imgs/problemSolving.webp";
-import creativity from "../../imgs/creativity.jpg";
-import time from "../../imgs/time.png";
+import teamWork from "../../imgs/skills/soft/teamWork.png";
+import adaptability from "../../imgs/skills/soft/adaptability.jpeg";
+import communication from "../../imgs/skills/soft/Communication.webp";
+import problemsolving from "../../imgs/skills/soft/problemSolving.webp";
+import creativity from "../../imgs/skills/soft/creativity.jpg";
+import time from "../../imgs/skills/soft/time.png";
 
 const Skills = (props) => {
   const { skills } = props;

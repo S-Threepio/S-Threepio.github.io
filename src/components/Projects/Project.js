@@ -1,5 +1,4 @@
 import React, { useEffect } from "react";
-import creativity from "../../imgs/creativity.jpg";
 
 const Project = (props) => {
   useEffect(() => {
@@ -7,8 +6,19 @@ const Project = (props) => {
   }, []);
 
   const { data } = props;
+  const tech = [
+    "AWS",
+    "React",
+    "Vue",
+    "Android",
+    "MVVM",
+    "MVP",
+    "Redis",
+    "Docker",
+    "WSL2",
+  ];
   return (
-    <div className="flex flex-col items-start m-1 scale-95 bg-white border border-gray-300 shadow-lg">
+    <div className="flex flex-col items-start m-1 md:scale-[95%] bg-white border border-gray-300 shadow-lg">
       <img
         src={data.img}
         className="self-center object-fill h-56 p-2 px-6 w-120 "
@@ -19,7 +29,8 @@ const Project = (props) => {
           [Github]
         </a>
       </div>
-      <div className="px-6">{data.year}</div>
+      <div className="px-6 font-semibold">{data.year}</div>
+      <div className="px-6 pt-4 font-serif text-base">{tech.join(" - ")}</div>
       <ul className="px-6 py-4">
         {data.points.map((point, index) => (
           <li key={index} className="p-1 list-disc">

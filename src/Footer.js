@@ -1,7 +1,7 @@
 import React from "react";
-import linkedin from "./imgs/linkedin.png";
-import medium from "./imgs/medium.png";
-import github from "./imgs/github.png";
+import linkedin from "./imgs/landing/linkedin.png";
+import medium from "./imgs/landing/medium.png";
+import github from "./imgs/landing/github.png";
 
 const Footer = () => {
   return (

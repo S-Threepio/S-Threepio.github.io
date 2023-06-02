@@ -1,9 +1,9 @@
 import React from "react";
-import pfp from "../../imgs/pfp.jpg";
-import linkedin from "../../imgs/linkedin-blue.png";
-import medium from "../../imgs/medium.png";
-import github from "../../imgs/github.png";
-import leetcode from "../../imgs/leetcode.png";
+import pfp from "../../imgs/landing/pfp.jpg";
+import linkedin from "../../imgs/landing/linkedin-blue.png";
+import medium from "../../imgs/landing/medium.png";
+import github from "../../imgs/landing/github.png";
+import leetcode from "../../imgs/landing/leetcode.png";
 import Desc from "./Desc";
 import BasicButtons from "../BasicButtons";
 

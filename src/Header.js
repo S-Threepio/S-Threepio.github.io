@@ -1,7 +1,7 @@
 import { Link, useLocation } from "react-router-dom";
 import navLinks from "./data/urls.json";
-import logo from "./imgs/education.png";
-import menu from "./imgs/menu.png";
+import logo from "./imgs/landing/education.png";
+import menu from "./imgs/landing/menu.png";
 import React, { useEffect, useState } from "react";
 const Header = () => {
   const [isMenuOpen, setMenuOpen] = useState(false);
