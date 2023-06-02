@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import b1 from "../../imgs/blog/android.png";
 
 const Blog = (props) => {
-  const { blog, isLast } = props;
+  const { blog, isLast, isEven } = props;
 
   useEffect(() => {
     console.log(blog, isLast);
@@ -10,14 +10,25 @@ const Blog = (props) => {
 
   return (
     <div>
-      <div className="flex flex-col xl:flex-row p-5 items-center">
+      <div
+        className={`flex flex-col xl:flex-row items-center ${
+          !isLast ? "pb-10" : "pb-0"
+        }
+        ${!isEven ? "xl:flex-row-reverse" : ""}`}
+      >
         <img
           src={blog.img}
           className="object-contain w-[250px] h-[300px] mx-10"
         />
         <div className="flex flex-col gap-10 items-center">
-          <div className="text-xl lg:text-3xl font-semibold w-4/5 text-justify">
-            {blog.title} <a href={blog.link}>{blog.label}</a>
+          <div className="text-xl lg:text-3xl font-semibold w-4/5">
+            {blog.title}{" "}
+            <a
+              href={blog.link}
+              className="text-2xl text-blue-950 font-bold underline"
+            >
+              {blog.label}
+            </a>
           </div>
           <div className="w-4/5 font-semibold text-justify">{blog.info}</div>
         </div>

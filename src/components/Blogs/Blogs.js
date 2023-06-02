@@ -37,9 +37,9 @@ const Blogs = () => {
         src={cover}
         className="w-screen h-[50vh] object-center object-cover"
       />
-      <div className="flex-col flex lg:w-3/5 mb-10 items-center">
+      <div className="flex-col flex md:w-4/5 min-[1600px]:w-3/5 mb-10 items-center">
         <div className="text-5xl font-bold p-4 mb-10">My Blogs</div>
-        <div className="lg:mx-32 m-10 font-serif text-lg text-justify">
+        <div className=" lg:mx-32 m-10 font-serif text-lg text-justify">
           My habit of sharing learnings developed in HSBC where I gave a lot of
           knowledge transfer sessions. This very habit nurtured my interest in
           writing technical blogs. Below are the technical blogs that I
@@ -51,6 +51,7 @@ const Blogs = () => {
             <Blog
               key={index}
               blog={blog}
+              isEven={count % 2 == 0}
               isLast={count++ == blogdata.length - 1}
             />
           ))}
