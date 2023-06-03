@@ -25,12 +25,12 @@ const Blog = (props) => {
             {blog.title}{" "}
             <a
               href={blog.link}
-              className="text-2xl text-blue-950 font-bold underline"
+              className="text-lg lg:text-2xl text-blue-950 font-bold underline"
             >
               {blog.label}
             </a>
           </div>
-          <div className="w-4/5 font-semibold text-justify">{blog.info}</div>
+          <div className="w-4/5 text-lg text-justify">{blog.info}</div>
         </div>
       </div>
       {!isLast && (

@@ -24,7 +24,7 @@ const Blogs = () => {
     },
     {
       img: b3,
-      title: "03 Crypto Currency Block chain application",
+      title: "03 Crypto Currency Block Chain Application",
       link: "https://s-threepio.medium.com/creating-a-cryptocurrency-blockchain-app-46d057d9a712",
       label: "[Medium]",
       info: "I wrote about the workings of the blockchain technology. I also explained how your own cryptocurrency can be created by using a redis publish subscribe model for peers.",
@@ -38,8 +38,10 @@ const Blogs = () => {
         className="w-screen h-[50vh] object-center object-cover"
       />
       <div className="mb-[5%] md:relative md:bottom-[20%]  md:mb-[-5%] flex flex-col w-4/5 lg:w-3/5 bg-white items-center">
-        <div className="text-4xl md:text-5xl font-bold p-4">My Blogs</div>
-        <div className="mx-10 text-base md:text-lg md:mx-20 lg:mx-32 mt-10 font-serif text-justify">
+        <div className="text-4xl md:text-5xl font-bold p-4 md:mt-6">
+          My Blogs
+        </div>
+        <div className="mx-10 font-semibold md:text-lg md:mx-20 lg:mx-32 mt-10 text-justify">
           My habit of sharing learnings developed in HSBC where I gave a lot of
           knowledge transfer sessions. This very habit nurtured my interest in
           writing technical blogs. Below are the technical blogs that I
