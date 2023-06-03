@@ -7,7 +7,7 @@ import Skills from "./components/Skills/Skills.js";
 import Projects from "./components/Projects/Projects.js";
 import Blogs from "./components/Blogs/Blogs.js";
 import Certifications from "./components/Certifications.js";
-import Hobbies from "./components/Hobbies.js";
+import Hobbies from "./components/Hobbies/Hobbies.js";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 const App = () => {
@@ -52,6 +52,7 @@ const App = () => {
           <Route path="/skills" element={<Skills skills={skills} />} />
           <Route path="/projects" element={<Projects />} />
           <Route path="/blogs" element={<Blogs />} />
+          <Route path="/hobbies" element={<Hobbies />} />
         </Routes>
       </Router>
       <Footer />
