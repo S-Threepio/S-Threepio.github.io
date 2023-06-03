@@ -37,14 +37,16 @@ const Blogs = () => {
         src={cover}
         className="w-screen h-[50vh] object-center object-cover"
       />
-      <div className="flex-col flex md:w-4/5 min-[1600px]:w-3/5 mb-10 items-center">
-        <div className="text-5xl font-bold p-4 mb-10">My Blogs</div>
-        <div className=" lg:mx-32 m-10 font-serif text-lg text-justify">
+      <div className="mb-[5%] md:relative md:bottom-[20%]  md:mb-[-5%] flex flex-col w-4/5 lg:w-3/5 bg-white items-center">
+        <div className="text-4xl md:text-5xl font-bold p-4">My Blogs</div>
+        <div className="mx-10 text-base md:text-lg md:mx-20 lg:mx-32 mt-10 font-serif text-justify">
           My habit of sharing learnings developed in HSBC where I gave a lot of
           knowledge transfer sessions. This very habit nurtured my interest in
           writing technical blogs. Below are the technical blogs that I
           published with the same intention.
         </div>
+      </div>
+      <div className="flex-col flex md:w-4/5 min-[1600px]:w-3/5 mb-10 items-center">
         <div className=" w-4/5 border-b-[1px] border-gray-800 xl:mb-20" />
         <div className="flex flex-col items-center w-4/5">
           {blogdata.map((blog, index) => (
