@@ -37,7 +37,7 @@ const Blogs = () => {
         src={cover}
         className="w-screen h-[50vh] object-center object-cover"
       />
-      <div className="mb-[5%] md:relative md:bottom-[20%]  md:mb-[-5%] flex flex-col w-4/5 lg:w-3/5 bg-white items-center">
+      <div className="mb-[5%] md:relative md:bottom-[25%]  md:mb-[-7%] flex flex-col w-4/5 lg:w-3/5 bg-white items-center">
         <div className="text-4xl md:text-5xl font-bold p-4 md:mt-6">
           My Blogs
         </div>
@@ -48,8 +48,8 @@ const Blogs = () => {
           published with the same intention.
         </div>
       </div>
-      <div className="flex-col flex md:w-4/5 min-[1600px]:w-3/5 mb-10 items-center">
-        <div className=" w-4/5 border-b-[1px] border-gray-800 xl:mb-20" />
+      <div className="flex-col flex md:w-4/5 min-[1600px]:w-[65%] mb-10 items-center">
+        <div className=" w-4/5 border-b-[1px] border-gray-800 xl:mb-18" />
         <div className="flex flex-col items-center w-4/5">
           {blogdata.map((blog, index) => (
             <Blog
