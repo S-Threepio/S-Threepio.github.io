@@ -42,6 +42,30 @@ const Resume = () => {
     ],
   };
 
+  const handleView = () => {
+    // Create a temporary <a> element to trigger the download
+    const link = document.createElement("a");
+    link.href = process.env.PUBLIC_URL + "/file.pdf";
+    link.target = "_blank";
+    link.rel = "noopener noreferrer";
+    link.type = "application/pdf";
+    link.click();
+  };
+
+  const handleDownload = () => {
+    // Create a temporary <a> element to trigger the download
+    const link = document.createElement("a");
+    link.href = process.env.PUBLIC_URL + "/file.pdf";
+    link.download = "Swanand_Kavitkar_Resume.pdf"; // Specify the file name you want the user to download as
+    link.target = "_blank"; // Open the file in a new tab
+
+    document.body.appendChild(link);
+    link.click();
+
+    // Clean up the temporary <a> element
+    document.body.removeChild(link);
+  };
+
   return (
     <div className="flex flex-col flex-1 overflow-scroll">
       <div className="bg-[#F4ECE6] w-full flex p-6 justify-center">
@@ -59,11 +83,21 @@ const Resume = () => {
             career history and professional competencies, please take a moment
             to review my enclosed resume.
           </div>
-          <div
-            href="/resume"
-            className="w-max px-12 py-1  bg-[#0050FF] text-white font-semibold transition duration-100 ease-out hover:scale-105 hover:bg-[#F4ECE6] hover:cursor-pointer hover:text-gray-950 border border-gray-400 rounded-full shadow"
-          >
-            Download Resume
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-5 text-center">
+            <div
+              href="/resume"
+              className="px-12 py-1 bg-[#0050FF] text-white font-semibold transition duration-100 ease-out hover:scale-105 hover:bg-[#F4ECE6] hover:cursor-pointer hover:text-gray-950 border border-gray-400 rounded-full shadow"
+              onClick={handleDownload}
+            >
+              Download Resume
+            </div>
+            <div
+              href="/resume"
+              className="px-12 py-1 bg-[#0050FF] text-white font-semibold transition duration-100 ease-out hover:scale-105 hover:bg-[#F4ECE6] hover:cursor-pointer hover:text-gray-950 border border-gray-400 rounded-full shadow"
+              onClick={handleView}
+            >
+              View Resume
+            </div>
           </div>
         </div>
       </div>

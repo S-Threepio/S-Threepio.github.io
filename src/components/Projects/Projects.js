@@ -82,11 +82,11 @@ const Projects = () => {
   return (
     <div className="flex flex-col flex-1 overflow-scroll">
       <div className="flex justify-center w-full bg-white sm:p-6">
-        <div className="flex flex-col items-center py-4 sm:px-8 lg:items-start sm:m-2">
-          <div className="m-8 text-5xl font-bold text-center w-screen">
+        <div className="flex flex-col items-center py-4  lg:items-start sm:m-2">
+          <div className="my-8 text-5xl font-bold text-center w-screen">
             Projects
           </div>
-          <div className="grid gap-2 px-8 overflow-scroll w-[90%] sm:w-auto sm:px-20 lg:grid-cols-2 xl:grid-cols-3">
+          <div className="grid gap-2 px-2 overflow-scroll w-[90%] sm:w-auto sm:px-20 lg:grid-cols-2 xl:grid-cols-3">
             {projData.map((project, index) => (
               <Project key={index} data={project} />
             ))}

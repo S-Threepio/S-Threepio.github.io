@@ -1,6 +1,6 @@
 import React from "react";
 import Desc from "./Desc";
-import BasicButtons from "../BasicButtons";
+import BasicButtons from "./BasicButtons";
 
 const Bio = () => {
   return (

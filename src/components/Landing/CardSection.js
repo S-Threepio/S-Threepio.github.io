@@ -5,7 +5,7 @@ import medium from "../../imgs/landing/medium.png";
 import github from "../../imgs/landing/github.png";
 import leetcode from "../../imgs/landing/leetcode.png";
 import Desc from "./Desc";
-import BasicButtons from "../BasicButtons";
+import BasicButtons from "./BasicButtons";
 
 const CardSection = () => {
   return (
