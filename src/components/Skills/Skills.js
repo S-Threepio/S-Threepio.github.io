@@ -1,43 +1,37 @@
 import React from "react";
 import Softskills from "./Softskills";
-import teamWork from "../../imgs/skills/soft/teamWork.png";
-import adaptability from "../../imgs/skills/soft/adaptability.jpeg";
-import communication from "../../imgs/skills/soft/Communication.webp";
-import problemsolving from "../../imgs/skills/soft/problemSolving.webp";
-import creativity from "../../imgs/skills/soft/creativity.jpg";
-import time from "../../imgs/skills/soft/time.png";
-
+import images from "../../provider/ImageProvider";
 const Skills = (props) => {
   const { skills } = props;
 
   const data = [
     {
-      img: teamWork,
+      img: images.skills.teamWork,
       type: "Team Work",
       info: "Worked on the HSBC Oman and Qatar app with a team consisting of freshers and completed all the requirements with highest level of collaboration. I have repeatedly partenered with senior developers outside my team to resolve global level build issues",
     },
     {
-      img: adaptability,
+      img: images.skills.adaptability,
       type: "Adaptibility",
       info: "I was trained in full stack however the project assigned in HSBC was of Android. I adapted to it within a week and started contributing by the first month.I was the first in the department to complete the Google's Android certification requested by HSBC.",
     },
     {
-      img: communication,
+      img: images.skills.communication,
       type: "Communication",
       info: "Communicated with the stakeholders from Oman and Qatar whilst giving demo for the sprint work every alternate week. I also took alot of knowledge tranfer sessions to educate others about the codebase and various technologies.",
     },
     {
-      img: problemsolving,
+      img: images.skills.problemsolving,
       type: "Problem Solving",
       info: "I worked on making a QR Code module configurable while it was live in production for two other entites. I also helped a different team to merge their codebase into our exisiting live modules, resolved issues during the integration and provided robust alternatives.",
     },
     {
-      img: creativity,
+      img: images.skills.creativity,
       type: "Creativity",
       info: "During Covid 19 period the Thank you tree weekly activity was closed off due to work from home compulsion. Created an application to resume the activity and increase employee morale. I also took creative design decisions to make the applications entity wise configurable.",
     },
     {
-      img: time,
+      img: images.skills.time,
       type: "Time Management",
       info: "I worked on the project which had regulatory requirement and had a strict timeline for completion. My team was downsized by one during Covid-19 outbreak but I still delivered all the requirements in time.",
     },

@@ -1,5 +1,4 @@
 import React, { useEffect } from "react";
-import b1 from "../../imgs/blog/android.png";
 
 const Blog = (props) => {
   const { blog, isLast, isEven } = props;

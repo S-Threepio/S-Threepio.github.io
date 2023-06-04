@@ -1,8 +1,5 @@
 import React from "react";
-import linkedin from "./imgs/landing/linkedin.png";
-import medium from "./imgs/landing/medium.png";
-import github from "./imgs/landing/github.png";
-
+import images from "./provider/ImageProvider";
 const Footer = () => {
   return (
     <footer className="bg-[#F4ECE6] px-4 flex flex-col-reverse py-2 md:py-0 md:flex-row font-semibold items-center">
@@ -26,21 +23,21 @@ const Footer = () => {
             <a href="https://www.linkedin.com/in/s-threepio/">
               <img
                 className="w-6 pt-1 hover:scale-125"
-                src={linkedin}
+                src={images.footer.linkedin}
                 alt="Icon"
               />
             </a>
             <a href="https://github.com/S-Threepio">
               <img
                 className="w-6 pt-1 hover:scale-125"
-                src={github}
+                src={images.footer.github}
                 alt="Icon"
               />
             </a>
             <a href="https://s-threepio.medium.com/">
               <img
                 className="w-6 pt-1 hover:scale-125"
-                src={medium}
+                src={images.footer.medium}
                 alt="Icon"
               />
             </a>

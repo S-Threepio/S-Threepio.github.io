@@ -1,29 +1,26 @@
 import React from "react";
-import cover from "../../imgs/blog/cover.jfif";
 import Blog from "./Blog";
-import b1 from "../../imgs/blog/android.png";
-import b2 from "../../imgs/blog/docker.png";
-import b3 from "../../imgs/blog/crypto.jpg";
+import images from "../../provider/ImageProvider";
 
 const Blogs = () => {
   var count = 0;
   const blogdata = [
     {
-      img: b1,
+      img: images.blogs.b1,
       title: "01 Associate Android Developer Certification By Google",
       link: "https://s-threepio.medium.com/associate-android-developer-certification-by-google-114ab755c187",
       label: "[Medium]",
       info: "I explained the process of cracking the Google's android certification exam, interview and the approach for it's preparation. I also created resources for the same purpose",
     },
     {
-      img: b2,
+      img: images.blogs.b2,
       title: "02 Docker Overview with React Application",
       link: "https://s-threepio.medium.com/docker-overview-41a3bbfa19f3",
       label: "[Medium]",
       info: "I touched upon the basics of docker and it's advantages. As an add on, I have also explained the process to dockerize a basic react application.",
     },
     {
-      img: b3,
+      img: images.blogs.b3,
       title: "03 Crypto Currency Block Chain Application",
       link: "https://s-threepio.medium.com/creating-a-cryptocurrency-blockchain-app-46d057d9a712",
       label: "[Medium]",
@@ -34,7 +31,7 @@ const Blogs = () => {
   return (
     <div className="w-screen flex flex-1 flex-col items-center bg-white z-50 overflow-scroll">
       <img
-        src={cover}
+        src={images.blogs.cover}
         className="w-screen h-[50vh] object-center object-cover"
       />
       <div className="mb-[5%] md:relative md:bottom-[25%]  md:mb-[-7%] flex flex-col w-4/5 lg:w-3/5 bg-white items-center">

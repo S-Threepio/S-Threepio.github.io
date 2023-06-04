@@ -1,8 +1,7 @@
 import { Link, useLocation } from "react-router-dom";
 import navLinks from "./data/urls.json";
-import logo from "./imgs/landing/education.png";
-import menu from "./imgs/landing/menu.png";
 import React, { useEffect, useState } from "react";
+import images from "./provider/ImageProvider";
 const Header = () => {
   const [isMenuOpen, setMenuOpen] = useState(false);
 
@@ -26,7 +25,11 @@ const Header = () => {
         <div className="flex items-center justify-center flex-1 md:justify-normal">
           <span className="hidden px-2 text-xs md:flex">&#x25A0;</span>
           <span className="text-lg font-bold">Swanand Kavitkar</span>
-          <img className="hidden h-8 ml-2 mr-1 md:flex" src={logo} alt="Logo" />
+          <img
+            className="hidden h-8 ml-2 mr-1 md:flex"
+            src={images.header.logo}
+            alt="Logo"
+          />
           <div className="flex flex-row items-center gap-1 ml-2 text-base">
             <span>MSCS</span>
             <span>@</span>
@@ -38,7 +41,7 @@ const Header = () => {
           <img
             className={`w-5 ${!isMenuOpen ? `flex` : `hidden`} md:hidden`}
             onClick={handleMenuToggle}
-            src={menu}
+            src={images.header.menu}
             alt="Logo"
           />
         </div>

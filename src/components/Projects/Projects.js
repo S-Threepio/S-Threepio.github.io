@@ -1,16 +1,10 @@
 import React from "react";
 import Project from "./Project";
-import first from "../../imgs/projects/attendance_tracker.jpg";
-import second from "../../imgs/projects/meeting.png";
-import third from "../../imgs/projects/custody.jpg";
-import fourth from "../../imgs/projects/blockchain.jpg";
-import fifth from "../../imgs/projects/TYT.png";
-import sixth from "../../imgs/projects/utility.webp";
-
+import images from "../../provider/ImageProvider";
 const Projects = () => {
   const projData = [
     {
-      img: first,
+      img: images.projects.first,
       title: "Automated Attendance Tracker",
       link: "https://github.com/S-Threepio/Classroom-Attendance-Tracker",
       year: "January 2023",
@@ -24,7 +18,7 @@ const Projects = () => {
     },
 
     {
-      img: second,
+      img: images.projects.second,
       title: "Meeting Assistant Web App",
       link: "https://github.com/S-Threepio/voyager-react",
       year: "November 2020",
@@ -37,7 +31,7 @@ const Projects = () => {
       ],
     },
     {
-      img: third,
+      img: images.projects.third,
       title: "Computer Forensics: Chain of Custody",
       link: "https://github.com/S-Threepio/CSE469-project/tree/main",
       year: "October 2022",
@@ -47,7 +41,7 @@ const Projects = () => {
       ],
     },
     {
-      img: fourth,
+      img: images.projects.fourth,
       title: "Web Application for Crypto-Currency",
       link: "https://github.com/s-threepio/cryptochain",
       year: "March 2019",
@@ -57,7 +51,7 @@ const Projects = () => {
       ],
     },
     {
-      img: fifth,
+      img: images.projects.fifth,
       title: "Thank You Tree Android App",
       link: "https://github.com/S-Threepio/thank_you_tree_app",
       year: "January 2020",
@@ -68,7 +62,7 @@ const Projects = () => {
       ],
     },
     {
-      img: sixth,
+      img: images.projects.sixth,
       title: "Utility Application Android",
       link: "https://github.com/S-Threepio/UtilityApplication",
       year: "June 2020",
