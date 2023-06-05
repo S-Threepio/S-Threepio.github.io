@@ -21,8 +21,8 @@ const About = () => {
 
   return (
     <div
-      className={`flex-col flex-1 w-screen overflow-scroll md:flex-row md:flex scrollbar-hide 
-      ${shouldEnableScroll ? "md:overflow-scroll" : ""}`}
+      className={`flex-col flex-1 w-screen overflow-scroll md:flex-row md:flex scrollbar-hide md:scale-105
+      ${shouldEnableScroll ? "md:overflow-scroll" : "md:overflow-hidden"}`}
     >
       <div className="hidden md:flex h-full w-[40%] lg:bg-secondary "></div>
       <div className="flex flex-col items-center py-4 md:py-0 md:flex-row justify-center pad:right-[10%] pad:relative">
