@@ -5,7 +5,7 @@ import { GlobalDataContext } from "../../provider/GlobalDataProvider";
 const Certifications = () => {
   const certifications = useContext(GlobalDataContext).certifications;
   return (
-    <div className="flex-1 overflow-scroll">
+    <div className="flex-1 overflow-scroll scrollbar-hide">
       <div className="text-center text-4xl md:text-5xl font-bold p-4 md:mt-6">
         Certifications
       </div>
