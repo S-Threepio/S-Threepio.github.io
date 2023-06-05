@@ -31,7 +31,7 @@ const Skills = () => {
             <div className="w-screen px-10 pt-5 text-5xl font-bold text-left md:px-0 md:w-auto">
               Soft Skills
             </div>
-            <div className="grid grid-cols-1 p-5 md:grid-cols-2 xl:grid-cols-3">
+            <div className="grid grid-cols-1 justify-items-center items-center p-5 md:grid-cols-2 xl:grid-cols-3">
               {skills.soft.map((data, index) => (
                 <Softskills key={index} data={data} />
               ))}
