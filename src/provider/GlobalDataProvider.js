@@ -1,9 +1,13 @@
 import React, { createContext } from "react";
 
 const GlobalData = {
+  //
+  // -------------------------------------About Page Data-----------------------------------------
   about: {
     url: "/",
     label: "About",
+
+    // Header data common to all pages
     header: {
       logo: require("../imgs/landing/education.png"),
       menu: require("../imgs/landing/menu.png"),
@@ -12,6 +16,8 @@ const GlobalData = {
       universityShort: "ASU",
       university: "Arizona State University",
     },
+
+    // footer data common to all pages
     footer: {
       socialMediaURLs: [
         {
@@ -31,6 +37,8 @@ const GlobalData = {
       call: "+1 (623) 283-8579",
       email: "skavitka@asu.edu",
     },
+
+    // This is the left part of the landing page with profile picture (Looks like an ID Card)
     cardsection: {
       socialMediaURLs: [
         {
@@ -56,7 +64,41 @@ const GlobalData = {
       degreeShort: "MSCS @ ASU",
       date: "Graduating May 2024",
     },
+
+    // This is the right part of the landing page with a general welcome statement and summary
+    bio: {
+      bigGreet: "Hello",
+      intro: "I am Swanand and I code.",
+      description: (
+        <>
+          <p>
+            I am a <b className="font-semibold">Master of Science</b> Student at
+            the esteemed{" "}
+            <b className="font-semibold">Arizona State University</b> majoring
+            in <b className="font-semibold">Computer Science</b>. I have a work
+            experience of 2 years in Mobile Development at HSBC and I am skilled
+            in
+            <b className="font-semibold">
+              {" "}
+              Android, AWS Cloud, React.Js and Spring Boot.
+            </b>
+          </p>
+
+          <p>
+            <br />I am currently searching for{" "}
+            <b className="font-semibold">Summer 2023 internships</b> in USA. So
+            if you're looking to hire or just want to get in touch, feel free to
+            contact me on the phone number/email mentioned below.
+            <br />
+            <br />
+            <b className="font-semibold">Have a great day!!!</b>
+          </p>
+        </>
+      ),
+    },
   },
+
+  // -------------------------------------Resume Page Data-----------------------------------------
   resume: {
     url: "/resume",
     label: "Resume",
@@ -114,6 +156,8 @@ const GlobalData = {
       },
     ],
   },
+
+  // -------------------------------------Skills Page Data-----------------------------------------
   skills: {
     url: "/skills",
     label: "Skills",
@@ -180,42 +224,230 @@ const GlobalData = {
       },
     ],
   },
+
+  // -------------------------------------Projects Page Data-----------------------------------------
   projects: {
     url: "/projects",
     label: "Projects",
-    images: {
-      first: require("../imgs/projects/attendance_tracker.jpg"),
-      second: require("../imgs/projects/meeting.png"),
-      third: require("../imgs/projects/custody.jpg"),
-      fourth: require("../imgs/projects/blockchain.jpg"),
-      fifth: require("../imgs/projects/TYT.png"),
-      sixth: require("../imgs/projects/utility.webp"),
-    },
+    projData: [
+      {
+        img: require("../imgs/projects/attendance_tracker.jpg"),
+        title: "Automated Attendance Tracker",
+        link: "https://github.com/S-Threepio/Classroom-Attendance-Tracker",
+        year: "January 2023",
+        points: [
+          "Developed a classroom assistant project leveraging private cloud\
+          (Openstack) and public cloud (AWS) to streamline attendance tracking\
+          for educators, reducing manual processing time by 40%.",
+          "Implemented a hybrid cloud infrastructure, integrating AWS Lambda, S3 buckets, and DynamoDB, resulting in a 25% increase in accuracy and efficiency of student identification and real-time attendance reporting.",
+          "Implemented a hybrid cloud infrastructure, integrating AWS Lambda, S3 buckets, and DynamoDB, resulting in a 25% increase in accuracy and efficiency of student identification and real-time attendance reporting.",
+        ],
+        tech: [
+          "AWS",
+          "React",
+          "Vue",
+          "Android",
+          "MVVM",
+          "MVP",
+          "Redis",
+          "Docker",
+          "WSL2",
+        ],
+      },
+
+      {
+        img: require("../imgs/projects/meeting.png"),
+        title: "Meeting Assistant Web App",
+        link: "https://github.com/S-Threepio/voyager-react",
+        year: "November 2020",
+        points: [
+          "Created meeting assistant web app with speech-to-text transcription and meeting recording analysis, reducing\
+          prep time by 30% and increasing productivity by 55%.",
+          "Utilized ReactJS for responsive frontend, integrated AWS services for 87% performance improvement, and\
+          implemented AWS Cognito user pool reducing unauthorized access risk by 40%",
+          "Incorporated strong security protocols using AWS Cognito user pools.",
+        ],
+        tech: [
+          "AWS",
+          "React",
+          "Vue",
+          "Android",
+          "MVVM",
+          "MVP",
+          "Redis",
+          "Docker",
+          "WSL2",
+        ],
+      },
+      {
+        img: require("../imgs/projects/custody.jpg"),
+        title: "Computer Forensics: Chain of Custody",
+        link: "https://github.com/S-Threepio/CSE469-project/tree/main",
+        year: "October 2022",
+        points: [
+          "Created a digital equivalent to a chain of custody to record the history of the evidence from the time it is found until the case is closed.",
+          "Utilized SHA-256 functions to maintain the validity of the custody chain and maintain the zero trust policy.",
+        ],
+        tech: [
+          "AWS",
+          "React",
+          "Vue",
+          "Android",
+          "MVVM",
+          "MVP",
+          "Redis",
+          "Docker",
+          "WSL2",
+        ],
+      },
+      {
+        img: require("../imgs/projects/blockchain.jpg"),
+        title: "Web Application for Crypto-Currency",
+        link: "https://github.com/s-threepio/cryptochain",
+        year: "March 2019",
+        points: [
+          "Created a web application for a cryptocurrency network backed by a blockchain including private wallets for users and miners.",
+          "Dockerized the whole application using WSL2 and Docker to create separate containers for users,miners and redis server to establish separation of concerns",
+        ],
+        tech: [
+          "AWS",
+          "React",
+          "Vue",
+          "Android",
+          "MVVM",
+          "MVP",
+          "Redis",
+          "Docker",
+          "WSL2",
+        ],
+      },
+      {
+        img: require("../imgs/projects/TYT.png"),
+        title: "Thank You Tree Android App",
+        link: "https://github.com/S-Threepio/thank_you_tree_app",
+        year: "January 2020",
+        points: [
+          "Created a thank you tree android app for users to thank their colleagues online as a part of Great place to work initiative.",
+          "Designed the CRUD features on thank you notes and a dashboard for a reward based system at HSBC as well as share receipt functionality.",
+          "Made with Jetpack components and a robust MVVM Architecture with robust AWS backend.",
+        ],
+        tech: [
+          "AWS",
+          "React",
+          "Vue",
+          "Android",
+          "MVVM",
+          "MVP",
+          "Redis",
+          "Docker",
+          "WSL2",
+        ],
+      },
+      {
+        img: require("../imgs/projects/utility.webp"),
+        title: "Utility Application Android",
+        link: "https://github.com/S-Threepio/UtilityApplication",
+        year: "June 2020",
+        points: [
+          "Combined the most commonly used elements in android development into a single application to study them comparitively.",
+          "I have also implemented architecture patterns to familiarize students with separation of concerns",
+        ],
+        tech: [
+          "AWS",
+          "React",
+          "Vue",
+          "Android",
+          "MVVM",
+          "MVP",
+          "Redis",
+          "Docker",
+          "WSL2",
+        ],
+      },
+    ],
   },
+
+  // -------------------------------------Blogs Page Data-----------------------------------------
   blogs: {
     url: "/blogs",
     label: "Blogs",
-    images: {
-      b1: require("../imgs/blog/android.png"),
-      b2: require("../imgs/blog/docker.png"),
-      b3: require("../imgs/blog/crypto.jpg"),
-      cover: require("../imgs/blog/cover.jfif"),
-    },
+    cover: require("../imgs/blog/cover.jfif"),
+    summary: `My habit of sharing learnings developed in HSBC where I gave a lot of
+    knowledge transfer sessions. This very habit nurtured my interest in
+    writing technical blogs. Below are the technical blogs that I
+    published with the same intention.`,
+    blogData: [
+      {
+        img: require("../imgs/blog/android.png"),
+        title: "01 Associate Android Developer Certification By Google",
+        link: "https://s-threepio.medium.com/associate-android-developer-certification-by-google-114ab755c187",
+        label: "[Medium]",
+        info: "I explained the process of cracking the Google's android certification exam, interview and the approach for it's preparation. I also created resources for the same purpose",
+      },
+      {
+        img: require("../imgs/blog/docker.png"),
+        title: "02 Docker Overview with React Application",
+        link: "https://s-threepio.medium.com/docker-overview-41a3bbfa19f3",
+        label: "[Medium]",
+        info: "I touched upon the basics of docker and it's advantages. As an add on, I have also explained the process to dockerize a basic react application.",
+      },
+      {
+        img: require("../imgs/blog/crypto.jpg"),
+        title: "03 Crypto Currency Block Chain Application",
+        link: "https://s-threepio.medium.com/creating-a-cryptocurrency-blockchain-app-46d057d9a712",
+        label: "[Medium]",
+        info: "I wrote about the workings of the blockchain technology. I also explained how your own cryptocurrency can be created by using a redis publish subscribe model for peers.",
+      },
+    ],
   },
+
+  // -------------------------------------Certification Page Data-----------------------------------------
   certifications: {
     url: "/certifications",
     label: "Certifications",
-    images: {
-      medal: require("../imgs/medal.png"),
-    },
+    certs: [
+      {
+        title:
+          "Technologist of the Quarter Award for Outstanding Performance by HSBC",
+        date: "Jan-April 2020",
+        image: require("../imgs/medal.png"),
+      },
+      {
+        title: "Google Certified Associate Android Developer",
+        date: "Sep2020-Sep 2023",
+        image: require("../imgs/medal.png"),
+      },
+      {
+        title: "AWS Certified Solutions Architect - Associate (SAA)",
+        date: "Feb 2020-Feb 2023",
+        image: require("../imgs/medal.png"),
+      },
+      {
+        title: "Machine Learning Certified by Coursera",
+        date: "Jul 2019",
+        image: require("../imgs/medal.png"),
+      },
+    ],
   },
+
+  // -------------------------------------Hobbies Page Data-----------------------------------------
   hobbies: {
     url: "/hobbies",
     label: "Hobbies",
-    images: {
-      piano: require("../imgs/hobby/piano.webp"),
-      book: require("../imgs/hobby/book.webp"),
-    },
+    hobbyData: [
+      {
+        hobbyname: "Book Reading",
+        img: require("../imgs/hobby/book.webp"),
+        description:
+          "I am an avid reader of fantasy fiction and any book which has an amazing story to tell. In my opinion stories hold a lot power. Layered characters in a wonderful imagination and the decisions they make in a particular situation can tell us a lot about the way of life. My personal opinion : Every book is a self help book because reading is therapy.",
+      },
+      {
+        hobbyname: "Piano",
+        img: require("../imgs/hobby/piano.webp"),
+        description:
+          'Apart from listening to music, I also love to create my own with the beautiful 88 key beast. I compose when I am lucky and I play when I am not busy. I try to incorporate what Beethoven said about music."To play a wrong note is insignificant, but to play without passion is inexcusable."',
+      },
+    ],
   },
 };
 

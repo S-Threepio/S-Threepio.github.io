@@ -2,11 +2,6 @@ import React, { useEffect } from "react";
 
 const Blog = (props) => {
   const { blog, isLast, isEven } = props;
-
-  useEffect(() => {
-    console.log(blog, isLast);
-  }, []);
-
   return (
     <div>
       <div

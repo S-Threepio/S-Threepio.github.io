@@ -6,17 +6,6 @@ const Project = (props) => {
   }, []);
 
   const { data } = props;
-  const tech = [
-    "AWS",
-    "React",
-    "Vue",
-    "Android",
-    "MVVM",
-    "MVP",
-    "Redis",
-    "Docker",
-    "WSL2",
-  ];
   return (
     <div className="flex flex-col items-start m-1 md:scale-[95%] bg-white border border-gray-300 shadow-lg">
       <img
@@ -30,7 +19,9 @@ const Project = (props) => {
         </a>
       </div>
       <div className="px-6 font-semibold">{data.year}</div>
-      <div className="px-6 pt-4 font-serif text-base">{tech.join(" - ")}</div>
+      <div className="px-6 pt-4 font-serif text-base">
+        {data.tech.join(" - ")}
+      </div>
       <ul className="px-6 py-4">
         {data.points.map((point, index) => (
           <li key={index} className="p-1 list-disc">
