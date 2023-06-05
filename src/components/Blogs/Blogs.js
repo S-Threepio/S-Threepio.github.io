@@ -7,12 +7,12 @@ const Blogs = () => {
   const blogs = useContext(GlobalDataContext).blogs;
 
   return (
-    <div className="w-screen flex flex-1 flex-col items-center bg-white z-50 overflow-scroll">
+    <div className="w-screen flex flex-1 flex-col items-center bg-primary z-50 overflow-scroll">
       <img
         src={blogs.cover}
         className="w-screen h-[50vh] object-center object-cover"
       />
-      <div className="mb-[5%] md:relative md:bottom-[25%]  md:mb-[-7%] flex flex-col w-4/5 lg:w-3/5 bg-white items-center">
+      <div className="mb-[5%] md:relative md:bottom-[25%]  md:mb-[-7%] flex flex-col w-4/5 lg:w-3/5 bg-primary items-center">
         <div className="text-4xl md:text-5xl font-bold p-4 md:mt-6">
           My Blogs
         </div>

@@ -31,21 +31,21 @@ const Resume = () => {
 
   return (
     <div className="flex flex-col flex-1 overflow-scroll">
-      <div className="bg-[#F4ECE6] w-full flex p-6 justify-center">
+      <div className="bg-secondary w-full flex p-6 justify-center">
         <div className="flex flex-col gap-10 items-center lg:items-start px-8 py-4 mb-2 w-[900px] sm:m-2">
           <div className="text-5xl font-bold w-max">Summary</div>
           <div className="text-lg text-justify">{resume.summary}</div>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-5 text-center">
             <div
               href="/resume"
-              className="px-12 py-1 bg-[#0050FF] text-white font-semibold transition duration-100 ease-out hover:scale-105 hover:bg-[#F4ECE6] hover:cursor-pointer hover:text-gray-950 border border-gray-400 rounded-full shadow"
+              className="px-12 py-1 bg-linkcolor text-white font-semibold transition duration-100 ease-out hover:scale-105 hover:bg-secondary hover:cursor-pointer hover:text-gray-950 border border-gray-400 rounded-full shadow"
               onClick={handleDownload}
             >
               Download Resume
             </div>
             <div
               href="/resume"
-              className="px-12 py-1 bg-[#0050FF] text-white font-semibold transition duration-100 ease-out hover:scale-105 hover:bg-[#F4ECE6] hover:cursor-pointer hover:text-gray-950 border border-gray-400 rounded-full shadow"
+              className="px-12 py-1 bg-linkcolor text-white font-semibold transition duration-100 ease-out hover:scale-105 hover:bg-secondary hover:cursor-pointer hover:text-gray-950 border border-gray-400 rounded-full shadow"
               onClick={handleView}
             >
               View Resume
@@ -54,7 +54,7 @@ const Resume = () => {
         </div>
       </div>
 
-      <div className="bg-[#ECEBEB] w-full justify-center text-center lg:text-justify flex p-6 my-2 sm:my-2">
+      <div className="bg-sober w-full justify-center text-center lg:text-justify flex p-6 my-2 sm:my-2">
         <div className="flex flex-col gap-10 px-8 py-4 items-center lg:items-start mb-2 w-[900px] ">
           <div className="text-5xl font-bold text-left w-max">Education</div>
           <div className="flex flex-col items-center gap-10 text-justify justify-left">
@@ -65,7 +65,7 @@ const Resume = () => {
         </div>
       </div>
 
-      <div className="bg-[#ECEBEB] w-full justify-center flex p-6 my-2 sm:my-2">
+      <div className="bg-sober w-full justify-center flex p-6 my-2 sm:my-2">
         <div className="flex flex-col gap-10 px-8 py-4 items-center lg:items-start mb-2 w-[900px] ">
           <div className="text-5xl font-bold text-left w-max">Work</div>
           <div className="flex flex-col items-center justify-center gap-10">

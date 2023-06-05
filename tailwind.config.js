@@ -10,7 +10,14 @@ module.exports = {
       lg: "1024px", // Custom large screen breakpoint
       xl: "1280px", // Custom extra-large screen breakpoint
     },
-    extend: {},
+    extend: {
+      colors: {
+        primary: "#FFFFFF", // Modify an existing color
+        secondary: "#F4ECE6", // Add a new color
+        sober: "#ECEBEB",
+        linkcolor: "#0050FF",
+      },
+    },
   },
   plugins: [],
 };

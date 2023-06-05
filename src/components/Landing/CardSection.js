@@ -4,11 +4,13 @@ import BasicButtons from "./BasicButtons";
 import { GlobalDataContext } from "../../provider/GlobalDataProvider";
 
 const CardSection = () => {
-  const cardsection = useContext(GlobalDataContext).about.cardsection;
+  const about = useContext(GlobalDataContext).about;
+  const description = about.bio.description;
+  const cardsection = about.cardsection;
 
   return (
     <div className="flex flex-col justify-center w-full border-gray-300 md:inline-block md:w-auto md:border md:shadow-lg h-max md:min-w-max">
-      <div className="order-1 items-center flex flex-col md:py-4 px-10 md:bg-[#F4ECE6]">
+      <div className="order-1 items-center flex flex-col md:py-4 px-10 md:bg-secondary">
         <img
           className="object-cover w-56 h-56 rounded-full lg:overflow-hidden"
           src={cardsection.pfp}
@@ -28,9 +30,9 @@ const CardSection = () => {
         </div>
       </div>
       <div className="flex flex-col order-3 py-4 md:hidden">
-        <Desc />
+        <Desc description={description} />
       </div>
-      <div className="flex order-2 w-full gap-2 py-2 bg-white justify-evenly">
+      <div className="flex order-2 w-full gap-2 py-2 bg-primary justify-evenly">
         {cardsection.socialMediaURLs.map((platform, index) => (
           <a href={platform.url}>
             <img
