@@ -26,12 +26,12 @@ const Skills = () => {
             </div>
           </div>
         </div>
-        <div className="flex flex-col items-center w-screen p-10 overflow-hidden md:items-start lg:items-center">
+        <div className="flex flex-col items-center w-screen overflow-hidden md:items-start lg:items-center">
           <div className="flex flex-col items-center md:items-start lg:w-[1000px] xl:w-[1200px]">
-            <div className="w-screen px-10 text-5xl font-bold text-left md:px-0 md:w-auto">
+            <div className="w-screen px-10 pt-5 text-5xl font-bold text-left md:px-0 md:w-auto">
               Soft Skills
             </div>
-            <div className="grid grid-cols-1 mt-4 md:p-5 md:grid-cols-2 xl:grid-cols-3">
+            <div className="grid grid-cols-1 p-5 md:grid-cols-2 xl:grid-cols-3">
               {skills.soft.map((data, index) => (
                 <Softskills key={index} data={data} />
               ))}
