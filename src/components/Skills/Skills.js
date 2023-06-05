@@ -1,42 +1,10 @@
-import React from "react";
+import React, { useContext } from "react";
 import Softskills from "./Softskills";
 import images from "../../provider/ImageProvider";
-const Skills = (props) => {
-  const { skills } = props;
+import { GlobalDataContext } from "../../provider/GlobalDataProvider";
 
-  const data = [
-    {
-      img: images.skills.teamWork,
-      type: "Team Work",
-      info: "Worked on the HSBC Oman and Qatar app with a team consisting of freshers and completed all the requirements with highest level of collaboration. I have repeatedly partenered with senior developers outside my team to resolve global level build issues",
-    },
-    {
-      img: images.skills.adaptability,
-      type: "Adaptibility",
-      info: "I was trained in full stack however the project assigned in HSBC was of Android. I adapted to it within a week and started contributing by the first month.I was the first in the department to complete the Google's Android certification requested by HSBC.",
-    },
-    {
-      img: images.skills.communication,
-      type: "Communication",
-      info: "Communicated with the stakeholders from Oman and Qatar whilst giving demo for the sprint work every alternate week. I also took alot of knowledge tranfer sessions to educate others about the codebase and various technologies.",
-    },
-    {
-      img: images.skills.problemsolving,
-      type: "Problem Solving",
-      info: "I worked on making a QR Code module configurable while it was live in production for two other entites. I also helped a different team to merge their codebase into our exisiting live modules, resolved issues during the integration and provided robust alternatives.",
-    },
-    {
-      img: images.skills.creativity,
-      type: "Creativity",
-      info: "During Covid 19 period the Thank you tree weekly activity was closed off due to work from home compulsion. Created an application to resume the activity and increase employee morale. I also took creative design decisions to make the applications entity wise configurable.",
-    },
-    {
-      img: images.skills.time,
-      type: "Time Management",
-      info: "I worked on the project which had regulatory requirement and had a strict timeline for completion. My team was downsized by one during Covid-19 outbreak but I still delivered all the requirements in time.",
-    },
-  ];
-
+const Skills = () => {
+  const skills = useContext(GlobalDataContext).skills;
   return (
     <div className="flex flex-col items-center w-screen overflow-scroll">
       <div className="flex flex-col items-center w-max">
@@ -45,7 +13,7 @@ const Skills = (props) => {
             <div className="text-5xl font-bold text-left">Technical Skills</div>
             <div className="flex flex-col items-start">
               <ul className="flex flex-col items-start gap-3 m-10 text-xl md:gap-2">
-                {skills.map((skill, index) => (
+                {skills.tech.map((skill, index) => (
                   <li className="list-disc" key={index}>
                     <b className="font-bold">{skill.type} :</b>{" "}
                     <span className="sm:hidden">
@@ -64,7 +32,7 @@ const Skills = (props) => {
               Soft Skills
             </div>
             <div className="grid grid-cols-1 mt-4 md:p-5 md:grid-cols-2 xl:grid-cols-3">
-              {data.map((data, index) => (
+              {skills.soft.map((data, index) => (
                 <Softskills key={index} data={data} />
               ))}
             </div>

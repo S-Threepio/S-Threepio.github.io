@@ -12,37 +12,6 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { GlobalDataProvider } from "./provider/GlobalDataProvider.js";
 
 const App = () => {
-  const skills = [
-    {
-      type: "Programming Languages",
-      info: "Python, Java, Kotlin, C++, C, Javascript",
-    },
-    {
-      type: "Android Development",
-      info: "MVVM, Jetpack components, LiveData, RxJava, Retrofit, Kotlin Coroutines, View and Data Binding",
-    },
-    {
-      type: "Web Technology",
-      info: "ReactJS, CSS, Tailwind CSS, Bootstrap, Jquery",
-    },
-    {
-      type: "Backend",
-      info: "Spring, SpringBoot, Hibernate, ExpressJS, NodeJS",
-    },
-    {
-      type: "AWS Cloud",
-      info: "S3, Dynamo-DB, API-Gateway, Lambda, Transcribe, Comprehend, Cognito",
-    },
-    {
-      type: "Containerization",
-      info: "Docker, Vagrant, WSL2",
-    },
-    {
-      type: "Software Development Practices",
-      info: "Agile, Scrum, JIRA, Confluence, Github",
-    },
-  ];
-
   return (
     <GlobalDataProvider>
       <div className="flex flex-col h-screen m-0">
@@ -51,7 +20,7 @@ const App = () => {
           <Routes>
             <Route path="/" element={<About />} />
             <Route path="/resume" element={<Resume />} />
-            <Route path="/skills" element={<Skills skills={skills} />} />
+            <Route path="/skills" element={<Skills />} />
             <Route path="/projects" element={<Projects />} />
             <Route path="/blogs" element={<Blogs />} />
             <Route path="/hobbies" element={<Hobbies />} />
