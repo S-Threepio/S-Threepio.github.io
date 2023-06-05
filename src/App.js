@@ -9,6 +9,7 @@ import Blogs from "./components/Blogs/Blogs.js";
 import Certifications from "./components/Certifications/Certifications.js";
 import Hobbies from "./components/Hobbies/Hobbies.js";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { GlobalDataProvider } from "./provider/GlobalDataProvider.js";
 
 const App = () => {
   const skills = [
@@ -43,21 +44,23 @@ const App = () => {
   ];
 
   return (
-    <div className="flex flex-col h-screen m-0">
-      <Router>
-        <Header />
-        <Routes>
-          <Route path="/" element={<About />} />
-          <Route path="/resume" element={<Resume />} />
-          <Route path="/skills" element={<Skills skills={skills} />} />
-          <Route path="/projects" element={<Projects />} />
-          <Route path="/blogs" element={<Blogs />} />
-          <Route path="/hobbies" element={<Hobbies />} />
-          <Route path="/certifications" element={<Certifications />} />
-        </Routes>
-      </Router>
-      <Footer />
-    </div>
+    <GlobalDataProvider>
+      <div className="flex flex-col h-screen m-0">
+        <Router>
+          <Header />
+          <Routes>
+            <Route path="/" element={<About />} />
+            <Route path="/resume" element={<Resume />} />
+            <Route path="/skills" element={<Skills skills={skills} />} />
+            <Route path="/projects" element={<Projects />} />
+            <Route path="/blogs" element={<Blogs />} />
+            <Route path="/hobbies" element={<Hobbies />} />
+            <Route path="/certifications" element={<Certifications />} />
+          </Routes>
+        </Router>
+        <Footer />
+      </div>
+    </GlobalDataProvider>
   );
 };
 

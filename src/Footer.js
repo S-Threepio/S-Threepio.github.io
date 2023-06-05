@@ -1,6 +1,9 @@
-import React from "react";
-import images from "./provider/ImageProvider";
+import React, { useContext } from "react";
+import { GlobalDataContext } from "./provider/GlobalDataProvider";
+
 const Footer = () => {
+  const footer = useContext(GlobalDataContext).about.footer;
+
   return (
     <footer className="bg-[#F4ECE6] px-4 flex flex-col-reverse py-2 md:py-0 md:flex-row font-semibold items-center">
       <div className="flex-1 py-2 md:py-0">© 2023 by Swanand Kavitkar</div>
@@ -23,21 +26,21 @@ const Footer = () => {
             <a href="https://www.linkedin.com/in/s-threepio/">
               <img
                 className="w-6 pt-1 hover:scale-125"
-                src={images.footer.linkedin}
+                src={footer.linkedin}
                 alt="Icon"
               />
             </a>
             <a href="https://github.com/S-Threepio">
               <img
                 className="w-6 pt-1 hover:scale-125"
-                src={images.footer.github}
+                src={footer.github}
                 alt="Icon"
               />
             </a>
             <a href="https://s-threepio.medium.com/">
               <img
                 className="w-6 pt-1 hover:scale-125"
-                src={images.footer.medium}
+                src={footer.medium}
                 alt="Icon"
               />
             </a>

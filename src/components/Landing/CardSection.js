@@ -1,9 +1,11 @@
-import React from "react";
-import images from "../../provider/ImageProvider";
+import React, { useContext } from "react";
 import Desc from "./Desc";
 import BasicButtons from "./BasicButtons";
+import { GlobalDataContext } from "../../provider/GlobalDataProvider";
 
 const CardSection = () => {
+  const images = useContext(GlobalDataContext).about;
+
   return (
     <div className="flex flex-col justify-center w-full border-gray-300 md:inline-block md:w-auto md:border md:shadow-lg h-max md:min-w-max">
       <div className="order-1 items-center flex flex-col md:py-4 px-10 md:bg-[#F4ECE6]">
