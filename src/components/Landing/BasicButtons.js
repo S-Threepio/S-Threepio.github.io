@@ -2,10 +2,6 @@ import React from "react";
 import { Link, useNavigate } from "react-router-dom";
 
 const BasicButtons = () => {
-  const handleClick = (url) => {
-    console.log("myurl" + url);
-  };
-
   return (
     <div className="flex flex-row gap-4 my-6 text-base font-semibold md:gap-2 md:text-md">
       <Link

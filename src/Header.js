@@ -14,7 +14,6 @@ const Header = () => {
   const handleMenuToggle = () => {
     if (window.innerWidth < 768) {
       setMenuOpen(!isMenuOpen);
-      console.log(isMenuOpen);
     }
   };
 

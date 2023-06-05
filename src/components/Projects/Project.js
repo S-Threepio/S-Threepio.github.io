@@ -1,10 +1,6 @@
 import React, { useEffect } from "react";
 
 const Project = (props) => {
-  useEffect(() => {
-    console.log(props);
-  }, []);
-
   const { data } = props;
   return (
     <div className="flex flex-col items-start m-1 md:scale-[95%] bg-primary border border-gray-300 shadow-lg">

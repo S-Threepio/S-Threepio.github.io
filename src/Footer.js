@@ -24,7 +24,7 @@ const Footer = () => {
           Social
           <div className="flex justify-center gap-2 py-1 md:py-0">
             {footer.socialMediaURLs.map((platform, index) => (
-              <a href={platform.url}>
+              <a key={index} href={platform.url}>
                 <img
                   className="w-6 pt-1 hover:scale-125"
                   src={platform.icon}

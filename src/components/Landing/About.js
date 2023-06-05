@@ -1,12 +1,31 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import CardSection from "./CardSection";
 import Bio from "./Bio";
+
 const About = () => {
+  const [shouldEnableScroll, setShouldEnableScroll] = useState(false);
+
+  useEffect(() => {
+    function handleResize() {
+      const screenHeight = window.innerHeight;
+      setShouldEnableScroll(screenHeight < 750);
+    }
+
+    window.addEventListener("resize", handleResize);
+
+    // Cleanup the event listener when the component is unmounted
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
+
   return (
-    <div className="flex-col flex-1 w-screen overflow-scroll md:flex-row md:flex scrollbar-hide">
-      <div className="hidden md:flex flex-[2] lg:bg-secondary "></div>
-      <div className="hidden md:flex flex-[3] bg-primary "></div>
-      <div className="flex flex-[4] flex-col items-center py-4 md:py-0 md:flex-row justify-center pad:left-[10%] pad:absolute top-[20%] lg:left-[19%] tablet:left-[20%]  xl:left-[30%] md:scale-105">
+    <div
+      className={`flex-col flex-1 w-screen overflow-scroll md:flex-row md:flex scrollbar-hide 
+      ${shouldEnableScroll ? "md:overflow-scroll" : ""}`}
+    >
+      <div className="hidden md:flex h-full w-[40%] lg:bg-secondary "></div>
+      <div className="flex flex-col items-center py-4 md:py-0 md:flex-row justify-center pad:right-[10%] pad:relative">
         <CardSection />
         <Bio />
       </div>
