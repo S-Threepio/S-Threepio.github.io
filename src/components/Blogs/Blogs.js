@@ -12,7 +12,7 @@ const Blogs = () => {
         src={blogs.cover}
         className="w-screen h-[50vh] object-center object-cover"
       />
-      <div className="mb-[5%] md:relative md:bottom-[25%]  md:mb-[-7%] flex flex-col w-4/5 lg:w-3/5 bg-primary items-center">
+      <div className="mb-[5%] md:relative md:bottom-[180px]  md:mb-[-5%] flex flex-col w-4/5 lg:w-3/5 bg-primary items-center">
         <div className="text-4xl md:text-5xl font-bold p-4 md:mt-6">
           My Blogs
         </div>
