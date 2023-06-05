@@ -61,7 +61,7 @@ const Header = () => {
 
         <div>
           <ul
-            className={`pt-5 z-50 md:pt-0 w-1/2 h-screen flex transition-transform duration-300 transform md:transform-none md:transition-none flex-col absolute top-0 right-0  bg-primary text-center border border-gray-200  md:border-none md:static md:h-auto md:w-auto md:flex md:flex-row md:text-base
+            className={`pt-5 z-60 md:pt-0 w-1/2 h-screen flex transition-transform duration-300 transform md:transform-none md:transition-none flex-col absolute top-0 right-0  bg-primary text-center border border-gray-200  md:border-none md:static md:h-auto md:w-auto md:flex md:flex-row md:text-base
             ${isMenuOpen ? "translate-x-0" : "translate-x-full"}`}
           >
             {urls.map((element, index) => (
