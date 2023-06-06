@@ -14,7 +14,7 @@ import { GlobalDataProvider } from "./provider/GlobalDataProvider.js";
 const App = () => {
   return (
     <GlobalDataProvider>
-      <div className="flex flex-col h-screen m-0">
+      <div className="flex flex-col h-screen m-0 p-0">
         <Router>
           <Header />
           <Routes>
