@@ -6,7 +6,7 @@ const Projects = () => {
   const projData = useContext(GlobalDataContext).projects.projData;
 
   return (
-    <div className="flex flex-col flex-1 sm:overflow-y-scroll scrollbar-hide">
+    <div className="flex flex-col flex-1 sm:overflow-y-scroll scrollbar-hide pb-4 md:pb-0">
       <div className="flex justify-center w-full bg-primary">
         <div className="flex flex-col items-center lg:items-start sm:m-2">
           <div className="my-8 text-5xl font-bold text-center w-screen">

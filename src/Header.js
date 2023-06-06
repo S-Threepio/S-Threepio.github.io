@@ -17,6 +17,10 @@ const Header = () => {
     }
   };
 
+  useEffect(() => {
+    console.log("this is " + window.location.href.split("#")[1]);
+  }, []);
+
   const [activeIndex, setActiveIndex] = useState(0);
 
   const setCustomActiveIndex = (index) => {
@@ -69,7 +73,9 @@ const Header = () => {
                 key={index}
                 className={`md:text-center px-4 py-4 sm:py-2 transition duration-100 ease-out hover:bg-secondary md:hover:scale-105 cursor-pointer 
                 ${
-                  window.location.pathname == element.url
+                  window.location.href.split("#")[1] == element.url ||
+                  (window.location.href.split("#")[1] == undefined &&
+                    element.url == "/")
                     ? "bg-secondary"
                     : "bg-primary"
                 }`}

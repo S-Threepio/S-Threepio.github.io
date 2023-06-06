@@ -8,16 +8,16 @@ import Projects from "./components/Projects/Projects.js";
 import Blogs from "./components/Blogs/Blogs.js";
 import Certifications from "./components/Certifications/Certifications.js";
 import Hobbies from "./components/Hobbies/Hobbies.js";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { HashRouter as Router, Routes, Route } from "react-router-dom";
 import { GlobalDataProvider } from "./provider/GlobalDataProvider.js";
 
 const App = () => {
   return (
     <GlobalDataProvider>
       <Router>
-        <div className="flex flex-col h-screen m-0 p-0">
+        <div className="flex flex-col h-screen sm:h-screen m-0 p-0">
           <Header />
-          <div className="w-screen h-screen flex flex-col overflow-y-scroll sm:overflow-y-hidden scrollbar-hide p-0">
+          <div className="w-screen h-full flex flex-col overflow-y-scroll overflow-x-hidden sm:overflow-y-hidden scrollbar-hide p-0">
             <Routes>
               <Route path="/" element={<About />} />
               <Route path="/resume" element={<Resume />} />
