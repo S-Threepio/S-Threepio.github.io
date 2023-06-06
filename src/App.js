@@ -14,10 +14,10 @@ import { GlobalDataProvider } from "./provider/GlobalDataProvider.js";
 const App = () => {
   return (
     <GlobalDataProvider>
-      <div className="flex flex-col h-screen m-0 p-0">
-        <Router>
+      <Router>
+        <div className="flex flex-col h-screen m-0 p-0">
           <Header />
-          <div className="flex flex-col h-screen overflow-scroll scrollbar-hide m-0 p-0">
+          <div className="w-screen h-screen flex flex-col overflow-y-scroll sm:overflow-y-hidden scrollbar-hide p-0">
             <Routes>
               <Route path="/" element={<About />} />
               <Route path="/resume" element={<Resume />} />
@@ -29,8 +29,8 @@ const App = () => {
             </Routes>
             <Footer />
           </div>
-        </Router>
-      </div>
+        </div>
+      </Router>
     </GlobalDataProvider>
   );
 };
