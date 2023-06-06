@@ -17,17 +17,19 @@ const App = () => {
       <div className="flex flex-col h-screen m-0 p-0">
         <Router>
           <Header />
-          <Routes>
-            <Route path="/" element={<About />} />
-            <Route path="/resume" element={<Resume />} />
-            <Route path="/skills" element={<Skills />} />
-            <Route path="/projects" element={<Projects />} />
-            <Route path="/blogs" element={<Blogs />} />
-            <Route path="/hobbies" element={<Hobbies />} />
-            <Route path="/certifications" element={<Certifications />} />
-          </Routes>
+          <div className="flex flex-col h-screen overflow-scroll scrollbar-hide m-0 p-0">
+            <Routes>
+              <Route path="/" element={<About />} />
+              <Route path="/resume" element={<Resume />} />
+              <Route path="/skills" element={<Skills />} />
+              <Route path="/projects" element={<Projects />} />
+              <Route path="/blogs" element={<Blogs />} />
+              <Route path="/hobbies" element={<Hobbies />} />
+              <Route path="/certifications" element={<Certifications />} />
+            </Routes>
+            <Footer />
+          </div>
         </Router>
-        <Footer />
       </div>
     </GlobalDataProvider>
   );

@@ -7,7 +7,7 @@ const Hobbies = () => {
   const hobbyData = useContext(GlobalDataContext).hobbies.hobbyData;
 
   return (
-    <div className="flex flex-1 flex-col items-center overflow-y-scroll overflow-x-hidden scrollbar-hide">
+    <div className="flex flex-1 flex-col items-center sm:overflow-y-scroll overflow-x-hidden scrollbar-hide">
       <div className="text-4xl md:text-5xl font-bold p-4 md:mt-6">Hobbies</div>
       <div className="flex flex-col md:m-8 gap-10">
         {hobbyData.map((hobby, index) => (

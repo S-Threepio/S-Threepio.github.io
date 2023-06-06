@@ -6,7 +6,7 @@ import { GlobalDataContext } from "../../provider/GlobalDataProvider";
 const Skills = () => {
   const skills = useContext(GlobalDataContext).skills;
   return (
-    <div className="flex flex-col items-center w-screen overflow-scroll scrollbar-hide">
+    <div className="flex flex-col items-center w-screen sm:overflow-y-scroll scrollbar-hide">
       <div className="flex flex-col items-center w-max">
         <div className="flex flex-col items-center w-screen p-10 bg-[#E8E6E6]">
           <div className="flex flex-col items-start lg:w-[1000px] xl:w-[1200px]">
