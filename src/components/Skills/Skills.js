@@ -1,6 +1,5 @@
 import React, { useContext } from "react";
 import Softskills from "./Softskills";
-import images from "../../provider/ImageProvider";
 import { GlobalDataContext } from "../../provider/GlobalDataProvider";
 
 const Skills = () => {

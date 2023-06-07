@@ -127,9 +127,9 @@ const GlobalData = {
         year: "2015-2019",
         university: "Vishwakarma Institute of Technology",
         gpa: "3.98",
-        info: "I acquired my Bachelor of Technology degree in Computer Engineering from the Vishwakarma Institute of Technology. The\
-    relevant coursework included Data Structures, Design and Analysis\
-    of Algorithms, Web Technologies etc.",
+        info: `I acquired my Bachelor of Technology degree in Computer Engineering from the Vishwakarma Institute of Technology. The
+    relevant coursework included Data Structures, Design and Analysis
+    of Algorithms, Web Technologies etc.`,
       },
     ],
     work: [
@@ -236,11 +236,11 @@ const GlobalData = {
         link: "https://github.com/S-Threepio/Classroom-Attendance-Tracker",
         year: "January 2023",
         points: [
-          "Developed a classroom assistant project leveraging private cloud\
-          (Openstack) and public cloud (AWS) to streamline attendance tracking\
-          for educators, reducing manual processing time by 40%.",
+          `Developed a classroom assistant project leveraging private cloud
+          (Openstack) and public cloud (AWS) to streamline attendance tracking
+          for educators, reducing manual processing time by 40%.`,
           "Implemented a hybrid cloud infrastructure, integrating AWS Lambda, S3 buckets, and DynamoDB, resulting in a 25% increase in accuracy and efficiency of student identification and real-time attendance reporting.",
-          "Implemented a hybrid cloud infrastructure, integrating AWS Lambda, S3 buckets, and DynamoDB, resulting in a 25% increase in accuracy and efficiency of student identification and real-time attendance reporting.",
+          "Leveraged AWS Lambda, S3, and DynamoDB for real-time student identification, enhancing accuracy and efficiency by 25% while ensuring cost-effective scalability, processing 100 concurrent requests in 60 seconds.",
         ],
         tech: [
           "Openstack",
@@ -259,10 +259,10 @@ const GlobalData = {
         link: "https://github.com/S-Threepio/voyager-react",
         year: "November 2020",
         points: [
-          "Created meeting assistant web app with speech-to-text transcription and meeting recording analysis, reducing\
-          prep time by 30% and increasing productivity by 55%.",
-          "Utilized ReactJS for responsive frontend, integrated AWS services for 87% performance improvement, and\
-          implemented AWS Cognito user pool reducing unauthorized access risk by 40%",
+          `Created meeting assistant web app with speech-to-text transcription and meeting recording analysis, reducing
+          prep time by 30% and increasing productivity by 55%.`,
+          `Utilized ReactJS for responsive frontend, integrated AWS services for 87% performance improvement, and
+          implemented AWS Cognito user pool reducing unauthorized access risk by 40%`,
           "Incorporated strong security protocols using AWS Cognito user pools.",
         ],
         tech: [

@@ -10,6 +10,7 @@ const Hobby = (props) => {
     >
       <img
         src={hobby.img}
+        alt={hobby.hobbyname}
         className="p-4 object-cover w-[400px] md:w-[600px]"
       />
       <div className="w-[400px] md:w-[600px]">

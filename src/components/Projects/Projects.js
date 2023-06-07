@@ -1,6 +1,5 @@
 import React, { useContext } from "react";
 import Project from "./Project";
-import images from "../../provider/ImageProvider";
 import { GlobalDataContext } from "../../provider/GlobalDataProvider";
 const Projects = () => {
   const projData = useContext(GlobalDataContext).projects.projData;

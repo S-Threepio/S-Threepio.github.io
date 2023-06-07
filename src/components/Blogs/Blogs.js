@@ -10,6 +10,7 @@ const Blogs = () => {
     <div className="w-screen flex flex-1 flex-col items-center bg-primary sm:overflow-y-scroll scrollbar-hide">
       <img
         src={blogs.cover}
+        alt="blog cover"
         className="w-screen h-[50vh] object-center object-cover"
       />
       <div className="mb-[5%] md:relative md:bottom-[180px]  md:mb-[-5%] flex flex-col w-4/5 lg:w-3/5 bg-primary items-center">
@@ -27,8 +28,8 @@ const Blogs = () => {
             <Blog
               key={index}
               blog={blog}
-              isEven={count % 2 == 0}
-              isLast={count++ == blogs.blogData.length - 1}
+              isEven={count % 2 === 0}
+              isLast={count++ === blogs.blogData.length - 1}
             />
           ))}
         </div>

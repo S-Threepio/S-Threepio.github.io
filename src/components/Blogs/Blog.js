@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React from "react";
 
 const Blog = (props) => {
   const { blog, isLast, isEven } = props;
@@ -12,6 +12,7 @@ const Blog = (props) => {
       >
         <img
           src={blog.img}
+          alt={blog.title}
           className="object-contain w-[250px] h-[300px] mx-10"
         />
         <div className="flex flex-col gap-10 items-center">

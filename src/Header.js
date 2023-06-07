@@ -1,4 +1,4 @@
-import { Link, useLocation } from "react-router-dom";
+import { Link } from "react-router-dom";
 import React, { useContext, useEffect, useState } from "react";
 import { GlobalDataContext } from "./provider/GlobalDataProvider";
 
@@ -21,10 +21,7 @@ const Header = () => {
     console.log("this is " + window.location.href.split("#")[1]);
   }, []);
 
-  const [activeIndex, setActiveIndex] = useState(0);
-
   const setCustomActiveIndex = (index) => {
-    setActiveIndex(index);
     handleMenuToggle();
   };
 
@@ -73,9 +70,9 @@ const Header = () => {
                 key={index}
                 className={`md:text-center px-4 py-4 sm:py-2 transition duration-100 ease-out hover:bg-secondary md:hover:scale-105 cursor-pointer 
                 ${
-                  window.location.href.split("#")[1] == element.url ||
-                  (window.location.href.split("#")[1] == undefined &&
-                    element.url == "/")
+                  window.location.href.split("#")[1] === element.url ||
+                  (window.location.href.split("#")[1] === undefined &&
+                    element.url === "/")
                     ? "bg-secondary"
                     : "bg-primary"
                 }`}
