@@ -1,70 +1,66 @@
-# Getting Started with Create React App
+# Live website : www.skavitkar.com 
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Getting Started with Morpholio
 
-## Available Scripts
+To get started with Morpholio, follow these steps:
 
-In the project directory, you can run:
+1. Clone the repository from GitHub: `git clone https://github.com/S-Threepio/Morpholio.git`.
+2. Navigate to the project directory: `cd Morpholio`.
+3. Install the necessary dependencies by running: `npm install`.
 
-### `npm start`
-
-Runs the app in the development mode.\
+## `npm start`
+- Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- The page will reload when you make changes.\
+- You may also see any lint errors in the console.
 
-### `npm test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+# Creating your own portfolio using Morpholio
+- Clone this repository and open the project in an IDE (such as Visual studio code)
+- Navigate to [GlobalDataProvider](https://github.com/S-Threepio/S-Threepio.github.io/blob/master/src/provider/GlobalDataProvider.js)
 
-### `npm run build`
+- Update the Json file as per your requirement.
+- Delete the JSON entry for the pages that you don't want to use
+- **PLEASE NOTE :**
+Having a resume and a project site is the bare minimum requirement for Morpholio.
+If you dont have one of these then in addition to deleting the json object you have to delete the respective button on landing page's basic button section 
+[BasicButtons](https://github.com/S-Threepio/S-Threepio.github.io/blob/master/src/components/Landing/BasicButtons.js) 
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+# Deploying your Portfolio on github.io
+- Open the package.json file in your project and change the following property:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- "homepage": "https://your-username.github.io/your-repo-name",
+**This field is not the domain name of your website but rather where your repository is located**
 
-### `npm run eject`
+- Replace your-username with your GitHub username and your-repo-name with the name of your GitHub repository.
+Save the changes to the package.json file.
+**github-gh page dependency and pre-deploy,deploy scripts are already present in the repository**
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+- Finally, to deploy your app, run the command: **npm run deploy**. 
+This will create a branch called gh-pages in your GitHub repository and deploy the contents of the build folder to that branch.
+After the deployment is complete, you can access your live Morpholio website at https://your-username.github.io/your-repo-name.
+**Note: Make sure you have the necessary permissions to deploy to the repository.**
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+# Custom Domain name for your website
+- Buy a domain from a domain name provider
+- Go to the DNS settings page for domain name provider
+- Point all the A records to 
+`185.199.108.153`
+`185.199.109.153`
+`185.199.110.153`
+`185.199.111.153`
+as per [Github managing a custom domain](https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site/managing-a-custom-domain-for-your-github-pages-site)
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+- Point the CNAME record to your current github domain for your portfolio e.g. **"https://your-username.github.io"**
+- In the setting page of the repository got to pages and put your custom domain name e.g. **"www.skavitkar.com"**
+- click save, and DNS check will get done in some time.
+- once the DNS check is complete, check the Enforce https box
+- Voila your custom domain is ready!!!
 
-## Learn More
+Happy deploying! 🚀🌐
+Let's get creative and transform your portfolio with Morpholio! 🚀🎨
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
