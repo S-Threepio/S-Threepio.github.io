@@ -68,7 +68,7 @@ const Resume = () => {
       <div className="bg-sober w-full justify-center flex p-6">
         <div className="flex flex-col gap-10 px-8 py-4 items-center lg:items-start mb-2 w-[900px] ">
           <div className="text-5xl font-bold text-left w-max">Work</div>
-          <div className="flex flex-col items-center justify-center gap-10">
+          <div className="flex flex-col items-center justify-center gap-12">
             {resume.work.map((wk, index) => (
               <Work key={index} data={wk} />
             ))}

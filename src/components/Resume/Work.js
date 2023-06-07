@@ -9,7 +9,7 @@ const Work = (props) => {
         <div className="text-lg font-bold">{data.organisation}</div>
         <div className="text-lg font-semibold">{data.role}</div>
       </div>
-      <div className="flex-1 font-semibold">
+      <div className="flex-1 text-lg">
         <ul className="flex flex-col gap-2 text-justify list-disc">
           {data.detail.map((point, index) => (
             <li key={index}> {point} </li>

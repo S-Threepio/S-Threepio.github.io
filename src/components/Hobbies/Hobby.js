@@ -17,7 +17,9 @@ const Hobby = (props) => {
         <div className="text-3xl text-center font-semibold">
           {hobby.hobbyname}
         </div>
-        <div className="text-xl font-thin p-10">{hobby.description}</div>
+        <div className="text-lg text-justify font-medium p-10">
+          {hobby.description}
+        </div>
       </div>
     </div>
   );

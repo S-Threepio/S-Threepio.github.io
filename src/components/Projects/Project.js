@@ -19,7 +19,7 @@ const Project = (props) => {
       <div className="px-6 pt-4 font-serif text-base">
         {data.tech.join(" - ")}
       </div>
-      <ul className="px-6 py-4">
+      <ul className="px-6 py-4 text-lg">
         {data.points.map((point, index) => (
           <li key={index} className="p-1 list-disc">
             {point}

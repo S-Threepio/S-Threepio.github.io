@@ -9,7 +9,7 @@ const Education = (props) => {
         <div className="text-lg font-bold">{data.university}</div>
         <div className="text-lg font-semibold">GPA {data.gpa}</div>
       </div>
-      <div className="flex-1 font-semibold text-justify">{data.info}</div>
+      <div className="flex-1 text-lg text-justify">{data.info}</div>
     </div>
   );
 };
