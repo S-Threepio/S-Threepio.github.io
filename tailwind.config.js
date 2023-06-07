@@ -18,6 +18,9 @@ module.exports = {
         sober: "#ECEBEB",
         linkcolor: "#0050FF",
       },
+      padding: {
+        "safe-bottom": "env(safe-area-inset-bottom)",
+      },
     },
   },
   plugins: [
