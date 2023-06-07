@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState, useRef } from "react";
 import Header from "./Header.js";
 import Footer from "./Footer.js";
 import About from "./components/Landing/About.js";
@@ -12,12 +12,29 @@ import { HashRouter as Router, Routes, Route } from "react-router-dom";
 import { GlobalDataProvider } from "./provider/GlobalDataProvider.js";
 
 const App = () => {
+  const [scrollToTop, setScrollToTop] = useState(false);
+  const containerRef = useRef(null);
+  useEffect(() => {
+    if (scrollToTop && containerRef.current) {
+      console.log("boommmm");
+      containerRef.current.scrollTo(0, 0);
+      setScrollToTop(false);
+    }
+  }, [scrollToTop]);
+
+  const handleScrollToTop = () => {
+    setScrollToTop(true);
+  };
+
   return (
     <GlobalDataProvider>
       <Router>
         <div className="flex flex-col h-full md:h-screen m-0 p-0">
-          <Header />
-          <div className="w-screen h-screen md:h-full flex flex-col overflow-scroll sm:overflow-y-hidden scrollbar-hide p-0">
+          <Header handleScrollToTop={handleScrollToTop} />
+          <div
+            ref={containerRef}
+            className="w-screen h-screen md:h-full flex flex-col overflow-y-scroll overflow-x-hidden sm:overflow-y-hidden scrollbar-hide p-0"
+          >
             <Routes>
               <Route path="/" element={<About />} />
               <Route path="/resume" element={<Resume />} />

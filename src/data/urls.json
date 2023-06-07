@@ -1,9 +1,0 @@
-[
-  { "url": "/", "label": "About" },
-  { "url": "/resume", "label": "Resume" },
-  { "url": "/skills", "label": "Skills" },
-  { "url": "/projects", "label": "Projects" },
-  { "url": "/blogs", "label": "Blogs" },
-  { "url": "/certifications", "label": "Certifications" },
-  { "url": "/hobbies", "label": "Hobbies" }
-]

@@ -2,7 +2,7 @@ import { Link, useLocation } from "react-router-dom";
 import React, { useContext, useEffect, useState } from "react";
 import { GlobalDataContext } from "./provider/GlobalDataProvider";
 
-const Header = () => {
+const Header = ({ handleScrollToTop }) => {
   const globalData = useContext(GlobalDataContext);
   const location = useLocation();
   const header = globalData.about.header;
@@ -23,6 +23,7 @@ const Header = () => {
 
   const setActiveUrl = (url) => {
     setCurrentUrl(url);
+    handleScrollToTop();
     handleMenuToggle();
   };
 
