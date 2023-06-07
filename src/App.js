@@ -15,9 +15,9 @@ const App = () => {
   return (
     <GlobalDataProvider>
       <Router>
-        <div className="flex flex-col h-[calc(100vh-85px)] md:h-screen m-0 p-0">
+        <div className="flex flex-col h-full md:h-screen m-0 p-0">
           <Header />
-          <div className="w-screen h-fit md:h-full flex flex-col overflow-y-scroll overflow-x-hidden sm:overflow-y-hidden scrollbar-hide p-0">
+          <div className="w-screen h-screen md:h-full flex flex-col overflow-scroll sm:overflow-y-hidden scrollbar-hide p-0">
             <Routes>
               <Route path="/" element={<About />} />
               <Route path="/resume" element={<Resume />} />

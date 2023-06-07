@@ -7,7 +7,7 @@ import reportWebVitals from "./reportWebVitals";
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    <div className="h-screen scrollbar-hide overflow-hidden m-0">
+    <div className="h-full scrollbar-hide overflow-y-scroll m-0">
       <App />
     </div>
   </React.StrictMode>

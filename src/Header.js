@@ -1,10 +1,12 @@
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import React, { useContext, useEffect, useState } from "react";
 import { GlobalDataContext } from "./provider/GlobalDataProvider";
 
 const Header = () => {
   const globalData = useContext(GlobalDataContext);
+  const location = useLocation();
   const header = globalData.about.header;
+
   const urls = Object.keys(globalData).map((key) => ({
     url: globalData[key].url,
     label: globalData[key].label,
@@ -17,16 +19,15 @@ const Header = () => {
     }
   };
 
-  useEffect(() => {
-    console.log("this is " + window.location.href.split("#")[1]);
-  }, []);
+  const [currentUrl, setCurrentUrl] = useState("/");
 
-  const setCustomActiveIndex = (index) => {
+  const setActiveUrl = (url) => {
+    setCurrentUrl(url);
     handleMenuToggle();
   };
 
   return (
-    <header className="font-semibold scale-y-105 border-b border-gray-300 md:border-gray-100">
+    <header className="font-semibold border-b border-gray-300 md:border-gray-100">
       <nav className="flex flex-row items-center p-4 px-2 bg-primary h-max md:flex-col md:items-center xl:flex-row">
         <div className="flex items-center justify-center flex-1 md:justify-normal">
           <span className="hidden px-2 text-xs md:flex">&#x25A0;</span>
@@ -69,14 +70,8 @@ const Header = () => {
                 to={element.url}
                 key={index}
                 className={`md:text-center px-4 py-4 sm:py-2 transition duration-100 ease-out hover:bg-secondary md:hover:scale-105 cursor-pointer 
-                ${
-                  window.location.href.split("#")[1] === element.url ||
-                  (window.location.href.split("#")[1] === undefined &&
-                    element.url === "/")
-                    ? "bg-secondary"
-                    : "bg-primary"
-                }`}
-                onClick={() => setCustomActiveIndex(index)}
+                ${currentUrl === element.url ? "bg-secondary" : "bg-primary"}`}
+                onClick={() => setActiveUrl(element.url)}
               >
                 {element.label}
               </Link>

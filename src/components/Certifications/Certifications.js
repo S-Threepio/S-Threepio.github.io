@@ -11,7 +11,7 @@ const Certifications = () => {
       </div>
       <div className="flex flex-col gap-10 items-center p-10">
         {certifications.certs.map((cert, index) => (
-          <Certification cert={cert} />
+          <Certification cert={cert} key={index} />
         ))}
       </div>
     </div>
