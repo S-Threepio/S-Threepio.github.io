@@ -19,6 +19,10 @@ const Header = ({ handleScrollToTop }) => {
     }
   };
 
+  useEffect(() => {
+    setActiveUrl(window.location.href.split("#")[1]);
+  }, [window.location.href]);
+
   const [currentUrl, setCurrentUrl] = useState("/");
 
   const setActiveUrl = (url) => {
@@ -72,7 +76,6 @@ const Header = ({ handleScrollToTop }) => {
                 key={index}
                 className={`md:text-center px-4 py-4 sm:py-2 transition duration-100 ease-out hover:bg-secondary md:hover:scale-105 cursor-pointer 
                 ${currentUrl === element.url ? "bg-secondary" : "bg-primary"}`}
-                onClick={() => setActiveUrl(element.url)}
               >
                 {element.label}
               </Link>

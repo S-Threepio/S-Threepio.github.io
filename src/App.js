@@ -16,7 +16,6 @@ const App = () => {
   const containerRef = useRef(null);
   useEffect(() => {
     if (scrollToTop && containerRef.current) {
-      console.log("boommmm");
       containerRef.current.scrollTo(0, 0);
       setScrollToTop(false);
     }
