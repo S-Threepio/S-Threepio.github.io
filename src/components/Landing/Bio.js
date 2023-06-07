@@ -1,10 +1,7 @@
 import React, { useContext } from "react";
 import Desc from "./Desc";
 import BasicButtons from "./BasicButtons";
-import {
-  GlobalDataContext,
-  GlobalDataProvider,
-} from "../../provider/GlobalDataProvider";
+import { GlobalDataContext } from "../../provider/GlobalDataProvider";
 
 const Bio = () => {
   const bio = useContext(GlobalDataContext).about.bio;

@@ -6,7 +6,7 @@ const Project = (props) => {
     <div className="flex flex-col items-start m-1 md:scale-[95%] bg-primary border border-gray-300 shadow-lg">
       <img
         src={data.img}
-        alt={data.title}
+        alt="Project image"
         className="self-center object-fill h-56 p-2 px-6 w-120"
       />
       <div className="px-6 pt-4 text-xl font-semibold">
