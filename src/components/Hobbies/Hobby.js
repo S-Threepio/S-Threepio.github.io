@@ -4,7 +4,7 @@ const Hobby = (props) => {
   const { hobby, isEven } = props;
   return (
     <div
-      className={`flex flex-col xl:flex-row justify-center items-center border border-gray-200 shadow-2xl ${
+      className={`flex flex-col xl:flex-row justify-center items-center border border-gray-200 shadow-lg ${
         isEven ? "xl:flex-row-reverse" : ""
       } `}
     >
