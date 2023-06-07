@@ -4,7 +4,6 @@ import { GlobalDataContext } from "./provider/GlobalDataProvider";
 
 const Header = ({ handleScrollToTop }) => {
   const globalData = useContext(GlobalDataContext);
-  const location = useLocation();
   const header = globalData.about.header;
 
   const urls = Object.keys(globalData).map((key) => ({
@@ -12,23 +11,22 @@ const Header = ({ handleScrollToTop }) => {
     label: globalData[key].label,
   }));
   const [isMenuOpen, setMenuOpen] = useState(false);
+  const location = useLocation();
 
   const handleMenuToggle = () => {
     if (window.innerWidth < 768) {
       setMenuOpen(!isMenuOpen);
     }
   };
+  const [currentUrl, setCurrentUrl] = useState("");
 
   useEffect(() => {
-    setActiveUrl(window.location.href.split("#")[1]);
-  }, [window.location.href]);
-
-  const [currentUrl, setCurrentUrl] = useState("/");
+    setActiveUrl(location.pathname);
+  }, [location.pathname]);
 
   const setActiveUrl = (url) => {
     setCurrentUrl(url);
     handleScrollToTop();
-    handleMenuToggle();
   };
 
   return (
@@ -76,6 +74,7 @@ const Header = ({ handleScrollToTop }) => {
                 key={index}
                 className={`md:text-center px-4 py-4 sm:py-2 transition duration-100 ease-out hover:bg-secondary md:hover:scale-105 cursor-pointer 
                 ${currentUrl === element.url ? "bg-secondary" : "bg-primary"}`}
+                onClick={() => handleMenuToggle()}
               >
                 {element.label}
               </Link>

@@ -27,7 +27,7 @@ const Skills = () => {
         </div>
         <div className="flex flex-col items-center w-screen overflow-hidden md:items-start lg:items-center">
           <div className="flex flex-col items-center md:items-start lg:w-[1000px] xl:w-[1200px]">
-            <div className="w-screen px-10 pt-5 text-5xl font-bold text-left md:px-0 md:w-auto">
+            <div className="w-screen px-10 pt-5 text-5xl font-bold text-left md:px-10 md:w-auto">
               Soft Skills
             </div>
             <div className="grid grid-cols-1 justify-items-center items-center p-5 md:grid-cols-2 xl:grid-cols-3">
