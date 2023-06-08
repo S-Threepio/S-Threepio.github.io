@@ -18,12 +18,14 @@ Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
 # Creating your own portfolio using Morpholio
 - Clone this repository and open the project in an IDE (such as Visual studio code)
+- Put all the images that you want to use in [img](https://github.com/S-Threepio/Morpholio/tree/master/src/imgs) directory
 - Navigate to [GlobalDataProvider](https://github.com/S-Threepio/S-Threepio.github.io/blob/master/src/provider/GlobalDataProvider.js)
 
-- Update the Json file as per your requirement.
+- Update the Json file data as per your requirement.
+- Every entry corresponds to a page and you can edit the content and the image to be used as per your need 
 - Delete the JSON entry for the pages that you don't want to use
 - **PLEASE NOTE :**
-Having a resume and a project site is the bare minimum requirement for Morpholio.
+Having a resume and a project is the bare minimum requirement for this site.
 If you dont have one of these then in addition to deleting the json object you have to delete the respective button on landing page's basic button section 
 [BasicButtons](https://github.com/S-Threepio/S-Threepio.github.io/blob/master/src/components/Landing/BasicButtons.js) 
 
