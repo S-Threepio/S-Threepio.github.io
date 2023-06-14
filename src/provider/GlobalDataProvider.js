@@ -76,19 +76,20 @@ const GlobalData = {
             the esteemed{" "}
             <b className="font-semibold">Arizona State University</b> majoring
             in <b className="font-semibold">Computer Science</b>. I have a work
-            experience of 2 years in Mobile Development at HSBC and I am skilled
-            in
+            experience of 2 years in Software Development at HSBC and I am
+            skilled in
             <b className="font-semibold">
               {" "}
-              Android, AWS Cloud, React.Js and Spring Boot.
+              Android, AWS Cloud, React.Js, Spring Boot and Microservices.
             </b>
           </p>
 
           <p>
             <br />I am currently searching for{" "}
-            <b className="font-semibold">Summer 2023 internships</b> in USA. So
-            if you're looking to hire or just want to get in touch, feel free to
-            contact me on the phone number/email mentioned below.
+            <b className="font-semibold">Software Engineering Internships</b>{" "}
+            and <b className="font-semibold">Full Time Opportunities</b> in USA.
+            So if you're looking to hire or just want to get in touch, feel free
+            to contact me on the phone number/email mentioned below.
             <br />
             <br />
             <b className="font-semibold">Have a great day!!!</b>
