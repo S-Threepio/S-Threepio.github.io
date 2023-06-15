@@ -44,6 +44,8 @@ const About = () => {
     };
   }, []);
 
+  const transformStyle = scaleFactor !== 1 ? `scale(${scaleFactor})` : "";
+
   return (
     <div
       className={` flex-col sm:mt-0 md:flex-1 w-screen sm:overflow-y-scroll  md:flex-row md:flex scrollbar-hide
@@ -52,8 +54,8 @@ const About = () => {
       <div className="absolute hidden md:flex md:bg-secondary md:w-[40%] lg:w-[42%]  md:h-[100vh]"></div>
       <div
         ref={parentRef}
-        className={`flex z-10 flex-col py-4 md:py-0 md:flex-row md:justify-center items-center`}
-        style={{ transform: `scale(${scaleFactor})` }}
+        className={` z-10 flex flex-col py-4 md:py-0 md:flex-row md:justify-center items-center`}
+        style={{ transform: transformStyle }}
       >
         <CardSection
           setCardSectionHeight={setCardSectionHeight}
