@@ -28,7 +28,7 @@ const CardSection = ({ setCardSectionHeight, scaleFactor }) => {
 
   return (
     <div ref={childRef} className={`flex flex-1 justify-end `}>
-      <div className="flex flex-col justify-center border-gray-300 md:w-auto md:border md:shadow-lg h-max md:min-w-max">
+      <div className="flex flex-col justify-center border-gray-300 md:w-auto md:border md:border-gray-300 md:shadow-lg h-max md:min-w-max">
         <div className="order-1 items-center flex flex-col md:py-4 px-10 md:bg-secondary">
           <img
             className="object-cover w-56 h-56 rounded-full lg:overflow-hidden"
