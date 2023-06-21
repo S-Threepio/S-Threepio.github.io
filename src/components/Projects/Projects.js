@@ -1,8 +1,14 @@
-import React, { useContext } from "react";
+import React, { useContext, useState } from "react";
 import Project from "./Project";
 import { GlobalDataContext } from "../../provider/GlobalDataProvider";
 const Projects = () => {
   const projData = useContext(GlobalDataContext).projects.projData;
+  const [filter, setFilter] = useState("all");
+
+  const handleFilter = (type) => {
+    setFilter(type.toLowerCase());
+  };
+  const types = ["All", "AWS", "Mobile", "Blockchain"];
 
   return (
     <div className="flex flex-col flex-1 sm:overflow-y-scroll scrollbar-hide pb-4 md:pb-0">
@@ -11,9 +17,20 @@ const Projects = () => {
           <div className="my-8 text-5xl font-bold text-center w-screen">
             Projects
           </div>
-          <div className="grid gap-2 px-2 overflow-scroll scrollbar-hide w-[90%] sm:w-auto sm:px-20 lg:grid-cols-2 xl:grid-cols-3">
+          <div className="grid grid-cols-2 lg:w-full lg:flex lg:flex-row justify-center items-center gap-4 my-2">
+            {types.map((type, index) => (
+              <button
+                className=" py-0.5 w-[200px] text-center font-semibold bg-primary transition duration-100 ease-out hover:scale-105 hover:bg-secondary text-gray-800 border border-gray-400 rounded-full shadow"
+                key={index}
+                onClick={() => handleFilter(type)}
+              >
+                {type}
+              </button>
+            ))}
+          </div>
+          <div className="grid gap-2 px-2 overflow-y-scroll scrollbar-hide w-[90%] sm:w-auto sm:px-20 lg:grid-cols-2 ">
             {projData.map((project, index) => (
-              <Project key={index} data={project} />
+              <Project key={index} data={project} filter={filter} />
             ))}
           </div>
         </div>

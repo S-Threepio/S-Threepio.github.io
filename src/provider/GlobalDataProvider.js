@@ -234,6 +234,7 @@ const GlobalData = {
       {
         img: require("../imgs/projects/attendance_tracker.jpg"),
         title: "Automated Attendance Tracker",
+        type: "aws",
         link: "https://github.com/S-Threepio/Classroom-Attendance-Tracker",
         year: "January 2023",
         points: [
@@ -259,6 +260,7 @@ const GlobalData = {
         title: "Meeting Assistant Web App",
         link: "https://github.com/S-Threepio/voyager-react",
         year: "November 2020",
+        type: "aws",
         points: [
           `Created meeting assistant web app with speech-to-text transcription and meeting recording analysis, reducing
           prep time by 30% and increasing productivity by 55%.`,
@@ -282,6 +284,7 @@ const GlobalData = {
       {
         img: require("../imgs/projects/custody.jpg"),
         title: "Computer Forensics: Chain of Custody",
+        type: "blockchain",
         link: "https://github.com/S-Threepio/CSE469-project/tree/main",
         year: "October 2022",
         points: [
@@ -302,6 +305,7 @@ const GlobalData = {
         title: "Web Application for Crypto-Currency",
         link: "https://github.com/s-threepio/cryptochain",
         year: "March 2019",
+        type: "blockchain",
         points: [
           "Created a web application for a cryptocurrency network backed by a blockchain including private wallets for users and miners.",
           "Dockerized the whole application using WSL2 and Docker to create separate containers for users,miners and redis server to establish separation of concerns",
@@ -323,6 +327,7 @@ const GlobalData = {
         title: "Thank You Tree Android App",
         link: "https://github.com/S-Threepio/thank_you_tree_app",
         year: "January 2020",
+        type: "mobile",
         points: [
           "Created a thank you tree android app for users to thank their colleagues online as a part of Great place to work initiative.",
           "Designed the CRUD features on thank you notes and a dashboard for a reward based system at HSBC as well as share receipt functionality.",
@@ -343,6 +348,7 @@ const GlobalData = {
         title: "Utility Application Android",
         link: "https://github.com/S-Threepio/UtilityApplication",
         year: "June 2020",
+        type: "mobile",
         points: [
           "Combined the most commonly used elements in android development into a single application to study them comparitively.",
           "I have also implemented architecture patterns to familiarize students with separation of concerns",

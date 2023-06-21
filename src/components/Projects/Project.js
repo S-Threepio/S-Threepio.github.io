@@ -1,9 +1,14 @@
-import React from "react";
+import React, { useEffect } from "react";
 
 const Project = (props) => {
-  const { data } = props;
+  const { data, filter } = props;
+  let visible = filter == "all" || filter == data.type.toLowerCase();
   return (
-    <div className="flex flex-col items-start m-1 md:scale-[95%] bg-primary border border-gray-300 shadow-lg">
+    <div
+      className={`transition-opacity duration-500 ease-in-out ${
+        visible ? "" : "hidden"
+      }  flex flex-col items-start m-1 md:scale-[95%] bg-primary border border-gray-300 shadow-lg`}
+    >
       <img
         src={data.img}
         alt="Project"
