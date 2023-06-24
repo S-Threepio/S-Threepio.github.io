@@ -1,15 +1,18 @@
+import { Transition } from "@headlessui/react";
 import React, { useEffect } from "react";
 
 const Project = (props) => {
   const { data, filter } = props;
   let visible = filter == "all" || filter == data.type.toLowerCase();
   return (
-    <div
-      className={`transition-opacity duration-700 ease-in-out my-2 md:my-0
-      ${visible ? "opacity-100 h-auto" : "opacity-0 "}
-        flex flex-col items-start md:scale-[95%] bg-primary border border-gray-300 shadow-lg`}
+    <Transition
+      className={`md:mx-5 my-2 md:my-0 flex flex-col items-start md:scale-[95%] bg-primary border border-gray-300 shadow-lg`}
+      show={visible}
+      enter="transition-opacity duration-1000"
+      enterFrom="opacity-0"
+      enterTo="opacity-100"
     >
-      <div className={`flex  ${visible ? "flex-col" : "hidden"}`}>
+      <div className={`flex  ${visible ? "flex-col" : "hidden"} sm:px-5`}>
         <img
           src={data.img}
           alt="Project"
@@ -33,7 +36,7 @@ const Project = (props) => {
           ))}
         </ul>
       </div>
-    </div>
+    </Transition>
   );
 };
 

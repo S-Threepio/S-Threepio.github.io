@@ -28,7 +28,7 @@ const Projects = () => {
               </button>
             ))}
           </div>
-          <div className="grid px-2 overflow-y-scroll scrollbar-hide w-[90%] sm:w-auto sm:px-20 lg:grid-cols-2 ">
+          <div className="grid px-2 self-center overflow-y-scroll scrollbar-hide w-[90%] sm:px-20 lg:grid-cols-2 ">
             {projData.map((project, index) => (
               <Project key={index} data={project} filter={filter} />
             ))}
