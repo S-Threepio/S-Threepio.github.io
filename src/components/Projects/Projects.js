@@ -20,7 +20,7 @@ const Projects = () => {
           <div className="grid grid-cols-2 lg:w-full lg:flex lg:flex-row justify-center items-center gap-4 my-2">
             {types.map((type, index) => (
               <button
-                className=" py-0.5 w-[200px] text-center font-semibold bg-primary transition duration-100 ease-out hover:scale-105 hover:bg-secondary text-gray-800 border border-gray-400 rounded-full shadow"
+                className=" py-0.5 w-[30vw] sm:w-[200px] text-center font-semibold bg-primary transition duration-100 ease-out hover:scale-105 hover:bg-secondary text-gray-800 border border-gray-400 rounded-full shadow"
                 key={index}
                 onClick={() => handleFilter(type)}
               >
