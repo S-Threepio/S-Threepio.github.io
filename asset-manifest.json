@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.de2f3bb1.css",
-    "main.js": "/static/js/main.0fec7153.js",
+    "main.css": "/static/css/main.b45b2feb.css",
+    "main.js": "/static/js/main.853b85ed.js",
     "static/js/787.1ed0c42c.chunk.js": "/static/js/787.1ed0c42c.chunk.js",
     "static/media/pfp.jpg": "/static/media/pfp.8787e43220736127c297.jpg",
     "static/media/blockchain.jpg": "/static/media/blockchain.44f33938f6e263bc5ccf.jpg",
@@ -17,23 +17,25 @@
     "static/media/adaptability.jpeg": "/static/media/adaptability.cff95dac8e89734ac4fb.jpeg",
     "static/media/attendance_tracker.jpg": "/static/media/attendance_tracker.ac331c54d54c85ff8a76.jpg",
     "static/media/piano.webp": "/static/media/piano.84d1b0f4ba0c0a78fbef.webp",
+    "static/media/HSBC.png": "/static/media/HSBC.7b0564b5d94c54735583.png",
     "static/media/teamWork.png": "/static/media/teamWork.9b90700a9d7c4a25ba56.png",
-    "static/media/medal.png": "/static/media/medal.60a50868fd2f0f139ceb.png",
     "static/media/custody.jpg": "/static/media/custody.0acb760233a23656b66b.jpg",
+    "static/media/google.png": "/static/media/google.e12914ad8afda3f6f2e8.png",
     "static/media/time.png": "/static/media/time.c8344006d5b41cc24273.png",
     "static/media/problemSolving.webp": "/static/media/problemSolving.02c276b3f3a59ccce2e3.webp",
     "static/media/medium.png": "/static/media/medium.d06d71a245db0137e2b2.png",
     "static/media/github.png": "/static/media/github.f11021803f68852df283.png",
     "static/media/education.png": "/static/media/education.4ef27ed177773c43acfb.png",
     "static/media/linkedin.png": "/static/media/linkedin.032cf8a63be2f0f4d425.png",
+    "static/media/aws.png": "/static/media/aws.6cb0036db459afd4c454.png",
     "static/media/utility.webp": "/static/media/utility.26ff4c40d14c21811a4b.webp",
     "index.html": "/index.html",
-    "main.de2f3bb1.css.map": "/static/css/main.de2f3bb1.css.map",
-    "main.0fec7153.js.map": "/static/js/main.0fec7153.js.map",
+    "main.b45b2feb.css.map": "/static/css/main.b45b2feb.css.map",
+    "main.853b85ed.js.map": "/static/js/main.853b85ed.js.map",
     "787.1ed0c42c.chunk.js.map": "/static/js/787.1ed0c42c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.de2f3bb1.css",
-    "static/js/main.0fec7153.js"
+    "static/css/main.b45b2feb.css",
+    "static/js/main.853b85ed.js"
   ]
 }
