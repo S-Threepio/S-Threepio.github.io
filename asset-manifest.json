@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.b45b2feb.css",
-    "main.js": "/static/js/main.853b85ed.js",
+    "main.css": "/static/css/main.01bce2b7.css",
+    "main.js": "/static/js/main.79c7dec6.js",
     "static/js/787.1ed0c42c.chunk.js": "/static/js/787.1ed0c42c.chunk.js",
     "static/media/pfp.jpg": "/static/media/pfp.8787e43220736127c297.jpg",
     "static/media/blockchain.jpg": "/static/media/blockchain.44f33938f6e263bc5ccf.jpg",
@@ -23,6 +23,7 @@
     "static/media/google.png": "/static/media/google.e12914ad8afda3f6f2e8.png",
     "static/media/time.png": "/static/media/time.c8344006d5b41cc24273.png",
     "static/media/problemSolving.webp": "/static/media/problemSolving.02c276b3f3a59ccce2e3.webp",
+    "static/media/port.png": "/static/media/port.2ec6e8203f1b7c977c9a.png",
     "static/media/medium.png": "/static/media/medium.d06d71a245db0137e2b2.png",
     "static/media/github.png": "/static/media/github.f11021803f68852df283.png",
     "static/media/education.png": "/static/media/education.4ef27ed177773c43acfb.png",
@@ -30,12 +31,12 @@
     "static/media/aws.png": "/static/media/aws.6cb0036db459afd4c454.png",
     "static/media/utility.webp": "/static/media/utility.26ff4c40d14c21811a4b.webp",
     "index.html": "/index.html",
-    "main.b45b2feb.css.map": "/static/css/main.b45b2feb.css.map",
-    "main.853b85ed.js.map": "/static/js/main.853b85ed.js.map",
+    "main.01bce2b7.css.map": "/static/css/main.01bce2b7.css.map",
+    "main.79c7dec6.js.map": "/static/js/main.79c7dec6.js.map",
     "787.1ed0c42c.chunk.js.map": "/static/js/787.1ed0c42c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.b45b2feb.css",
-    "static/js/main.853b85ed.js"
+    "static/css/main.01bce2b7.css",
+    "static/js/main.79c7dec6.js"
   ]
 }
