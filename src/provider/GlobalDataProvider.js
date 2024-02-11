@@ -72,28 +72,40 @@ const GlobalData = {
       description: (
         <>
           <p>
-            I am a <b className="font-semibold">Master of Science</b> Student at
-            the esteemed{" "}
-            <b className="font-semibold">Arizona State University</b> majoring
-            in <b className="font-semibold">Computer Science</b>. I have a work
-            experience of 2 years in Software Development at HSBC and I am
-            skilled in
+            I am currently pursuing a Master's degree in{" "}
             <b className="font-semibold">
               {" "}
-              Android, AWS Cloud, React.Js, Spring Boot and Microservices.
-            </b>
-          </p>
-
-          <p>
-            <br />I am currently searching for{" "}
-            <b className="font-semibold">Software Engineering Internships</b>{" "}
-            and <b className="font-semibold">Full Time Opportunities</b> in USA.
-            So if you're looking to hire or just want to get in touch, feel free
-            to contact me on the phone number/email mentioned below.
+              Computer Science at Arizona State University.
+            </b>{" "}
+            Previously, I worked as a{" "}
+            <b className="font-semibold">Software Engineer at HSBC,</b> where I
+            played a crucial role in developing{" "}
+            <b className="font-semibold">
+              feature-rich mobile banking applications
+            </b>{" "}
+            to enhance customer experience and{" "}
+            <b className="font-semibold">optimize transactions.</b> With a solid
+            background in{" "}
+            <b className="font-semibold">Web and Android development</b>, I
+            possess expertise in{" "}
+            <b className="font-semibold">AWS Cloud services.</b>
             <br />
             <br />
-            <b className="font-semibold">Have a great day!!!</b>
+            <b className="font-semibold">
+              I am actively pursuing full-time software engineer opportunities
+            </b>{" "}
+            to utilize my exceptional academic achievements and hands-on
+            experience, aiming to create significant contributions within the
+            technology industry.
+            <br />
+            <br /> If you are seeking someone to{" "}
+            <b className="font-semibold">
+              build scalable and high-quality software products,
+            </b>{" "}
+            feel free to reach out to me on phone/email mentioned below.
           </p>
+          <br />
+          <b className="font-semibold">Have a great day!!</b>
         </>
       ),
     },
@@ -234,15 +246,15 @@ const GlobalData = {
       {
         img: require("../imgs/projects/attendance_tracker.jpg"),
         title: "Automated Attendance Tracker",
-        type: "aws",
+        type: ["aws", "backend"],
         link: "https://github.com/S-Threepio/Classroom-Attendance-Tracker",
-        year: "January 2023",
+        year: "May 2023",
         points: [
-          `Developed a classroom assistant project leveraging private cloud
-          (Openstack) and public cloud (AWS) to streamline attendance tracking
-          for educators, reducing manual processing time by 40%.`,
-          "Implemented a hybrid cloud infrastructure, integrating AWS Lambda, S3 buckets, and DynamoDB, resulting in a 25% increase in accuracy and efficiency of student identification and real-time attendance reporting.",
-          "Leveraged AWS Lambda, S3, and DynamoDB for real-time student identification, enhancing accuracy and efficiency by 25% while ensuring cost-effective scalability, processing 100 concurrent requests in 60 seconds.",
+          ` Engineered a classroom assistant tool by creating a private cloud infrastructure using Openstack, enabling educators
+          to effortlessly manage student progress and assignments, resulting in a 40% reduction in administrative workload.
+          `,
+          `Incorporated AWS Lambda, S3, and DynamoDB to enhance accuracy and efficiency by 25% in real-time student
+          identification while handling 100 concurrent requests within 60 seconds.`,
         ],
         tech: [
           "Openstack",
@@ -254,19 +266,52 @@ const GlobalData = {
           "Docker",
         ],
       },
-
+      {
+        img: require("../imgs/projects/port.png"),
+        title: "Morpholio : The Portfolio Builder",
+        link: "https://github.com/S-Threepio/S-Threepio.github.io",
+        year: "January 2023",
+        type: ["frontend"],
+        points: [
+          `Designed an innovative personal website builder using ReactJS and Tailwind CSS, resulting in a 50% reduction in
+          development time and a 60% increase in user satisfaction.`,
+          `Optimized website performance by implementing React Hooks and Context API, enabling seamless data sharing across
+          components and enhancing user experience`,
+        ],
+        tech: ["React", "Javascript", "React Hooks", "Tailwind CSS"],
+      },
+      {
+        img: require("../imgs/projects/digit.png"),
+        title: " Handwritten Digits Classifier Flask Application",
+        link: "https://github.com/S-Threepio/Handwritten-Digits-Classifier-Flask-Application",
+        year: "November 2022",
+        type: ["aws", "backend"],
+        points: [
+          `Developed an ML application for handwritten digits classification, using Flask server and Docker for seamless deployment.`,
+          `Utilized Kubernetes clusters on AWS EKS and GCP GKE for streamlined deployment.`,
+          `Integrated Prometheus monitoring using Helm-charts for performance monitoring`,
+        ],
+        tech: [
+          "Kubernetes",
+          "Docker",
+          "AWS EKS",
+          "AWS EC2",
+          "GCP GKE",
+          "Prometheus",
+          "Helm",
+        ],
+      },
       {
         img: require("../imgs/projects/meeting.png"),
         title: "Meeting Assistant Web App",
         link: "https://github.com/S-Threepio/voyager-react",
         year: "November 2020",
-        type: "aws",
+        type: ["aws", "frontend"],
         points: [
-          `Created meeting assistant web app with speech-to-text transcription and meeting recording analysis, reducing
-          prep time by 30% and increasing productivity by 55%.`,
-          `Utilized ReactJS for responsive frontend, integrated AWS services for 87% performance improvement, and
-          implemented AWS Cognito user pool reducing unauthorized access risk by 40%`,
-          "Incorporated strong security protocols using AWS Cognito user pools.",
+          `Created meeting assistant web app with speech-to-text transcription, meeting recording analysis and MoM generation
+          increasing productivity by 55%.`,
+          `Leveraged ReactJS and Material UI for a seamless user experience, a 20% increase in user retention`,
+          `Integrated AWS services for transcription,analysis, storage and security achieving 87% performance improvement.`,
         ],
         tech: [
           "React",
@@ -284,7 +329,7 @@ const GlobalData = {
       {
         img: require("../imgs/projects/custody.jpg"),
         title: "Computer Forensics: Chain of Custody",
-        type: "blockchain",
+        type: ["blockchain"],
         link: "https://github.com/S-Threepio/CSE469-project/tree/main",
         year: "October 2022",
         points: [
@@ -305,7 +350,7 @@ const GlobalData = {
         title: "Web Application for Crypto-Currency",
         link: "https://github.com/s-threepio/cryptochain",
         year: "March 2019",
-        type: "blockchain",
+        type: ["blockchain", "frontend", "backend"],
         points: [
           "Created a web application for a cryptocurrency network backed by a blockchain including private wallets for users and miners.",
           "Dockerized the whole application using WSL2 and Docker to create separate containers for users,miners and redis server to establish separation of concerns",
@@ -323,11 +368,31 @@ const GlobalData = {
         ],
       },
       {
+        img: require("../imgs/projects/ai.png"),
+        title: "Guardian Angel Mobile Application",
+        link: "https://github.com/S-Threepio/Guardian-Angel-Mobile-Application",
+        year: "October 2023",
+        type: ["mobile", "backend"],
+        points: [
+          "Created a Guardian Angel application which can Send an Email, Schedule a Task, Play music based on your mood and Summarize Texts.",
+          "Utilizes OpenAI GPT to analyze and interpret the nature or category of the user's request.",
+        ],
+        tech: [
+          "Android",
+          "OpenAI GPT ",
+          "Flask",
+          "MVVM",
+          "View Binding",
+          "Kotlin Coroutines",
+          "Spotify API",
+        ],
+      },
+      {
         img: require("../imgs/projects/TYT.png"),
         title: "Thank You Tree Android App",
         link: "https://github.com/S-Threepio/thank_you_tree_app",
         year: "January 2020",
-        type: "mobile",
+        type: ["mobile", "aws"],
         points: [
           "Created a thank you tree android app for users to thank their colleagues online as a part of Great place to work initiative.",
           "Designed the CRUD features on thank you notes and a dashboard for a reward based system at HSBC as well as share receipt functionality.",
@@ -341,6 +406,9 @@ const GlobalData = {
           "LiveData",
           "View Binding",
           "Kotlin Coroutines",
+          "AWS S3",
+          "AWS Dynamo DB",
+          "AWS API Gateway",
         ],
       },
       {
@@ -348,7 +416,7 @@ const GlobalData = {
         title: "Utility Application Android",
         link: "https://github.com/S-Threepio/UtilityApplication",
         year: "June 2020",
-        type: "mobile",
+        type: ["mobile"],
         points: [
           "Combined the most commonly used elements in android development into a single application to study them comparitively.",
           "I have also implemented architecture patterns to familiarize students with separation of concerns",
@@ -406,25 +474,30 @@ const GlobalData = {
     label: "Certifications",
     certs: [
       {
+        title: "Hackerrank - Problem Solving Intermediate",
+        date: "June 2023",
+        image: require("../imgs/certs/hackerrank.png"),
+      },
+      {
         title:
           "Technologist of the Quarter Award for Outstanding Performance by HSBC",
         date: "Jan-April 2020",
-        image: require("../imgs/medal.png"),
+        image: require("../imgs/certs/HSBC.png"),
       },
       {
         title: "Google Certified Associate Android Developer",
         date: "Sep2020-Sep 2023",
-        image: require("../imgs/medal.png"),
+        image: require("../imgs/certs/google.png"),
       },
       {
         title: "AWS Certified Solutions Architect - Associate (SAA)",
         date: "Feb 2020-Feb 2023",
-        image: require("../imgs/medal.png"),
+        image: require("../imgs/certs/aws.png"),
       },
       {
         title: "Machine Learning Certified by Coursera",
         date: "Jul 2019",
-        image: require("../imgs/medal.png"),
+        image: require("../imgs/certs/cour.png"),
       },
     ],
   },

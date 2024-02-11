@@ -8,7 +8,7 @@ const Projects = () => {
   const handleFilter = (type) => {
     setFilter(type.toLowerCase());
   };
-  const types = ["All", "AWS", "Mobile", "Blockchain"];
+  const types = ["All", "Frontend", "Backend", "AWS", "Mobile", "Blockchain"];
 
   return (
     <div className="flex flex-col flex-1 sm:overflow-y-scroll scrollbar-hide pb-4 md:pb-0">
@@ -17,7 +17,7 @@ const Projects = () => {
           <div className="my-8 text-5xl font-bold text-center w-screen">
             Projects
           </div>
-          <div className="grid grid-cols-2 lg:w-full lg:flex lg:flex-row justify-center items-center gap-4 my-2">
+          <div className="grid grid-cols-2 lg:grid-cols-3 xl:grid-cols-6 self-center justify-center items-center gap-4 my-2">
             {types.map((type, index) => (
               <button
                 className=" py-0.5 w-[30vw] sm:w-[200px] text-center font-semibold bg-primary transition duration-100 ease-out hover:scale-105 hover:bg-secondary text-gray-800 border border-gray-400 rounded-full shadow"

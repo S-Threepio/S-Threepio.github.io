@@ -3,7 +3,9 @@ import React, { useEffect } from "react";
 
 const Project = (props) => {
   const { data, filter } = props;
-  let visible = filter == "all" || filter == data.type.toLowerCase();
+  let visible =
+    filter == "all" ||
+    data.type.some((type) => type.toLowerCase() === filter.toLowerCase());
   return (
     <Transition
       className={`md:mx-5 my-2 md:my-0 flex flex-col items-start md:scale-[95%] bg-primary border border-gray-300 shadow-lg`}

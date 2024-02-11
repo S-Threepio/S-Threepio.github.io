@@ -3,7 +3,7 @@ import React from "react";
 const Desc = (props) => {
   const { description } = props;
   return (
-    <div className="px-6 text-lg font-thin text-justify h-max md:py-2 md:px-0 ">
+    <div className="px-6 text-lg text-justify h-max md:py-2 md:px-0 ">
       {description}
     </div>
   );

@@ -8,7 +8,7 @@ const Resume = () => {
   const handleView = () => {
     // Create a temporary <a> element to trigger the download
     const link = document.createElement("a");
-    link.href = process.env.PUBLIC_URL + "/file.pdf";
+    link.href = process.env.PUBLIC_URL + "/Swanand_Kavitkar.pdf";
     link.target = "_blank";
     link.rel = "noopener noreferrer";
     link.type = "application/pdf";
@@ -18,7 +18,7 @@ const Resume = () => {
   const handleDownload = () => {
     // Create a temporary <a> element to trigger the download
     const link = document.createElement("a");
-    link.href = process.env.PUBLIC_URL + "/file.pdf";
+    link.href = process.env.PUBLIC_URL + "/Swanand_Kavitkar.pdf";
     link.download = "Swanand_Kavitkar_Resume.pdf"; // Specify the file name you want the user to download as
     link.target = "_blank"; // Open the file in a new tab
 
