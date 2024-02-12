@@ -412,6 +412,27 @@ const GlobalData = {
         ],
       },
       {
+        img: require("../imgs/projects/health.png"),
+        title: "Health Monitoring Application",
+        link: "https://github.com/S-Threepio/Health-Monitoring-Application",
+        year: "December 2023",
+        type: ["mobile"],
+        points: [
+          "Delivered a Health Monitoring Application achieving 95% accuracy in heart rate calculation through red intensity pixel analysis.",
+          "Utilized accelerometer algorithms for respiratory rate determination with 98% precision.",
+          "Leveraged Room DB for efficient data storage, reducing application response time by 20%.",
+        ],
+        tech: [
+          "Android",
+          "MVVM",
+          "Jetpack Compose",
+          "Service",
+          "View Binding",
+          "Kotlin Coroutines",
+        ],
+      },
+
+      {
         img: require("../imgs/projects/utility.webp"),
         title: "Utility Application Android",
         link: "https://github.com/S-Threepio/UtilityApplication",

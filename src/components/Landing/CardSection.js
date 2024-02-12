@@ -53,7 +53,12 @@ const CardSection = ({ setCardSectionHeight, scaleFactor }) => {
         </div>
         <div className="flex order-2 w-full gap-2 py-2 bg-primary justify-evenly">
           {cardsection.socialMediaURLs.map((platform, index) => (
-            <a key={index} href={platform.url}>
+            <a
+              key={index}
+              href={platform.url}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <img
                 className="w-8 hover:scale-125"
                 src={platform.icon}
